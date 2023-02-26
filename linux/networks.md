@@ -3,7 +3,7 @@ Network ports are not a physical connection. They are a logical connection used 
 They go from 0 to 65535
 
 #### Common ports
-80, 443: Web pages  (htto, https)
+80, 443: Web pages  (http, https)
 21: FTP
 25: email
 
