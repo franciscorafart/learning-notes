@@ -76,7 +76,6 @@ The first character of the output shows  what kind of file it is
 `$ mkdir dir3/dir4/dir5` => Create directory structure. This creates an error as dir3 and dir4 don't exist, directpries are created from right to left. Solution
 4`$ mkdir -p dir3/dir4/dir5` -p stands from parent.
 
-
 ### Copy
 
 `$ cp file1 file2` => If file2 doesn't exist it will create it with file1 content. If it exists, it overwrites the content of the file.
@@ -110,5 +109,26 @@ rm -ri fil1 dir1/
 shred -vu -n 100 file1
 
 
+# Finding files and directories
 
+Two commands
 
+1. locate (mlocate)
+Searches by string and returns a list of path names containing that string. It uses a database.x Run `sudo updatedb` to update the database mlocate uses. 
+
+To see the db run `ls /var/lib/mlocate`
+
+- General information of the database `mlocate -S`
+- Math only the basename for the specified pattern `mlocate -b name` ## basename is the name of the file on the directory, not the whole path
+- Find a file containing a string: `locate name` ## returns any file path containing that string partiallyS
+- Find by exact base name `locate -b '\name'`
+- Find a file that exists (In case it ws deleted bu still listed on db) `locate -e name`
+- Ignore the letter case `locate -i Name`
+- Search by using regex `locate -b -r '^shadow.[0-9]'`
+
+2. which
+
+Locates a command and returns absolute path of executable when the command is run
+
+- `which ls`
+- Find all executables that match a string `which -a ls`
