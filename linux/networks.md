@@ -11,10 +11,10 @@ A port is always associated with an IP address. They go together to allow for so
 76.45.644.34:443
 
 IP address: Determine geographical location of server / computer
-Port: which service/programon that server I awnt to use
+Port: which service/program on that server I want to use
 
 Netstat => Allows you to see the ip and ports the computer is connecting to.
 
 `0-1023` : System or well-know ports. Commont ports used (used on a server)
-`1024 - 49151`: User or registered ports. USed by companies for well know services. (used on a server)
+`1024 - 49151`: User or registered ports. Used by companies for well know services. (used on a server)
 `49151 - 65535`: Dynamic or Private ports. Client-side ports that are free to use (Used on a client)

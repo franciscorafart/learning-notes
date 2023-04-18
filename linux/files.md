@@ -114,13 +114,13 @@ shred -vu -n 100 file1
 Two commands
 
 1. locate (mlocate)
-Searches by string and returns a list of path names containing that string. It uses a database.x Run `sudo updatedb` to update the database mlocate uses. 
+Searches by string and returns a list of path names containing that string. It uses a database. Run `sudo updatedb` to update the database mlocate uses. 
 
 To see the db run `ls /var/lib/mlocate`
 
 - General information of the database `mlocate -S`
 - Math only the basename for the specified pattern `mlocate -b name` ## basename is the name of the file on the directory, not the whole path
-- Find a file containing a string: `locate name` ## returns any file path containing that string partiallyS
+- Find a file containing a string: `locate name` ## returns any file path containing that string partially S
 - Find by exact base name `locate -b '\name'`
 - Find a file that exists (In case it ws deleted bu still listed on db) `locate -e name`
 - Ignore the letter case `locate -i Name`

@@ -1,5 +1,5 @@
 ## Path
-Absolute path: Specify from the root directory. Always starts from forward slash /
+Absolute path: Specify from the root directory. Always starts from forward slash `/`
 
 Relative path: 
 Path defined from the current working directory
@@ -32,5 +32,5 @@ pwd # => printing the current working directory
 `sudo apt install tree`
 
 tree directory/ # => Ex: `tree .`
-`$ tree -d .`# => prints only directories
+`$ tree -d .` # => prints only directories
 `$ tree -f .` # => prints absolute paths
