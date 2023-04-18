@@ -108,6 +108,9 @@ rm -ri fil1 dir1/
 # secure removal of a file (verbose with 100 rounds of overwriting)
 shred -vu -n 100 file1
 
+# Get path of file
+`realpath <file.ext>` => Gives the absolute path of the file
+`readlink -f <file.ext>` => Same
 
 # Finding files and directories
 
