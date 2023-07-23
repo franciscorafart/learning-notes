@@ -28,3 +28,6 @@ A JWT token is attached to every request from the client side, so each request c
 ## Cons
 - Non-revokable: Tokens don't dissappear, they have to be invalidated with a blacklist on the server side.
 - Secret key: If the secret key is compromised then a malicious actor can fabricate tokens and impersonate all users.
+
+### Reference
+[Super Tokens](https://supertokens.com/blog/what-is-jwt)
