@@ -1,5 +1,9 @@
 # Distributed Systems
 
+Nowadays applications are very complex systems that integrate a number of services running on different machines and geographical locations. They act as distributed systems.
+
+Client-server: Simple distributed architecture of the eaarly world wide web. Tends to have a monolithic code base, difficult to scale and maintain on the long run.
+
 ### NGNIX
 
 Why use NGNIX?
@@ -19,3 +23,5 @@ Similar functions to Amazon's Elastic Load Balancer does, but open source.
 [Considerations when Designing Distributed Systems](https://www.suse.com/c/rancher_blog/considerations-when-designing-distributed-systems/)
 
 [What is NGNIX](https://medium.com/devopscurry/what-is-nginx-understanding-the-basics-of-nginx-in-2021-f8ee0f3d3d54)
+
+[NGNIX vs Load Balancer](https://www.sumologic.com/blog/aws-elb-vs-nginx-load-balancer/)
