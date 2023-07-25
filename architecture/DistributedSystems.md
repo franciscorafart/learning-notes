@@ -34,6 +34,20 @@ Kafka works better with microservice architectures. Services can interact betwee
 - Better for processing that used to be done in batch processes over night. Kafka allows for the event stream to be processed as soon as it happens.
 - Using Kafka tends to influence the architecture of the systems that are built with it.
 - Kafka allows to do relationships and filtering of Topics like a sql database would allow for tables. It has a Java API for making that easy.
+- Kafka stores copies of Topics across data centers so that it is fault tolerant
+- It divides actions into event Producers (Write/delete) and Consumer (Read)
+
+Cons:
+- Policies for deleting events
+- Not great for retreiving large amounts of data complex queries. For that SQL is much more perfromant
+
+Pros:
+- Process events in real time, no need for periodic batch updates.
+
+### Swagger
+Open source API documentation framework.
+
+- It provides HTML view of REST API documentation.
 
 #### Kafka Connect (Data integration)
 - It's a system that allows to connect Kafka with legacy Databases so that you can get data in and out of them.
