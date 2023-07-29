@@ -11,3 +11,6 @@ app.post("/users", (req, res) => {
     const body = req.body;
 });
 ```
+
+### Newer versions of Express
+Body parser is not necessary in newer versions >4 of express, as you can use `app.use(express.json())` instead.

@@ -48,6 +48,8 @@ Pros:
 Open source API documentation framework.
 
 - It provides HTML view of REST API documentation.
+- It helps determine, which are the endpoints to call, methods, params and responde structure.
+- Swagger can create the documentation for an API.
 
 #### Kafka Connect (Data integration)
 - It's a system that allows to connect Kafka with legacy Databases so that you can get data in and out of them.
