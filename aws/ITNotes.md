@@ -69,3 +69,24 @@ Pay for amount of data
 
 - Data Transfer
 Pay for data transfer out of cloud
+
+### AWS Global infrastructure
+- AWS Regions
+There's different AWS center clusters that are named Regions. They're around the world connected via a private network.
+Most Services are scoped into a region.
+
+How to chose a region? 
+- Compliance with laws
+- Latency (deploy it close to users)
+- Not all regions have all services
+- Pricing: Varies region to region
+
+- Availability zones
+Between 3-6 availability zones in each region, for example ap-southeast-2a, ap-southeast-2b, ap-southeast-2c.
+Availability zones: One or more datacenters that have redundant power, network, and connectivity. => Separated from each other so that disasters don't spill into each other.
+
+
+- AWS data centers
+
+- Edge locations
+400 points of presence. Content is delivered to users with the lowest latency.
