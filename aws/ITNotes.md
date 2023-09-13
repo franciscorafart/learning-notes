@@ -75,7 +75,7 @@ Pay for data transfer out of cloud
 There's different AWS center clusters that are named Regions. They're around the world connected via a private network.
 Most Services are scoped into a region.
 
-How to chose a region? 
+#### How to chose a region? 
 - Compliance with laws
 - Latency (deploy it close to users)
 - Not all regions have all services
@@ -90,3 +90,11 @@ Availability zones: One or more datacenters that have redundant power, network, 
 
 - Edge locations
 400 points of presence. Content is delivered to users with the lowest latency.
+
+Some AWS services are global, meaning that they don't require a region selection.
+Not all services are available in all regions.
+
+#### Shared responsability Model
+Security is a shared responsability between Amazon and the customer(you). There's a diagram with explanations of what kind of things the user is responsible for.
+
+https://aws.amazon.com/compliance/shared-responsibility-model/
