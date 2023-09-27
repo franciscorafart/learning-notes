@@ -43,3 +43,15 @@ Statement []:
     - Principal: Which account / user/ role this policy will be attached to.
 Action: List of API calls that will be allowed or denied based on the effects
 Resource: List of resources to which the action will apply to
+
+We can attach policies to a user directly, or inherit them from a group.
+We can also create custom policies that allow special combination of actions over different AWS resources.
+
+# IAM MFA
+To secure an AWS account we can do several things.
+
+- Password policy.
+In AWS IAM you can set a password policy (length, character tyoes), passwords expiry, password re-use,
+
+- MFA (Multifactor authentication)
+It is highly recommended (at least root account) to have Multi Factor Authentication
