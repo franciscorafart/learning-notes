@@ -55,3 +55,7 @@ In AWS IAM you can set a password policy (length, character tyoes), passwords ex
 
 - MFA (Multifactor authentication)
 It is highly recommended (at least root account) to have Multi Factor Authentication
+
+- Virtual MFA: (Google authenticcator, Authy)
+- U2F security key => Hardware device for multi factor authenticaton (YubiKey)
+- Hardware Key Fob MFA
