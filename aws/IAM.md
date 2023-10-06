@@ -30,7 +30,7 @@ When you log in with an IAM user the account dropdown will show `IAM user: user 
 ## Tags
 Information you can add to AWS resources
 
-# Policies
+## Policies
 Policies inheritance:
 - If you assign users to a group, all the users will inherit the groups permissions policies.
 - Inline Policy: For users that don't have a group.
@@ -47,7 +47,7 @@ Resource: List of resources to which the action will apply to
 We can attach policies to a user directly, or inherit them from a group.
 We can also create custom policies that allow special combination of actions over different AWS resources.
 
-# IAM MFA
+## IAM MFA
 To secure an AWS account we can do several things.
 
 - Password policy.
@@ -59,3 +59,32 @@ It is highly recommended (at least root account) to have Multi Factor Authentica
 - Virtual MFA: (Google authenticcator, Authy)
 - U2F security key => Hardware device for multi factor authenticaton (YubiKey)
 - Hardware Key Fob MFA
+
+## AWS access
+- AWS Management Console => Protected by password and MFA
+- AWS CLI => Protected by access keys
+- AWS SDK => Protected by access keys. Embedded in application code.
+
+The aws command is followed by the service (for example iam), and followed by the action.
+`aws iam list-users`
+
+To do actions with different users on the .aws/credentials file you have to use the --profile tag
+
+`aws iam list-users --profile other-user`
+
+## Cloud Shell
+Alternative way to access AWS instead of the CLI. It's a shell interface in the aws browser console. This service is free to use but isn't available in all regions.
+
+The perissions in cloud shell are applied to the user that is using it, and the region defaults to the specific user's region. You can override it with the `--region` flag.
+
+Files that you create on your cloudshell environment will persist across sessions. You can also upload and download files from it.
+
+# IAM Roles for AWS services
+Aws services will have to perform actions on our behalf. For this, we assign roles to these IAM roles, which act as users, but are not intended to be used by real users.
+For example, an EC2 instance might perform actions on AWS. For this we need to give this EC2 instance permissions, so that it can perform those actions. We can aassign an IAM role for this. For example, EC2 instance roles, Lambda Function roles, or Cloud Formation.
+
+Roles allow entities in AWS to get credentials to do whatever they need to do.
+
+We can create an AWS role for an AWS service, AWS account, Web identity, and others. The most common AWS services roles are EC2 and Lambda.
+
+Once we create a role, we have to attach policies to it.
