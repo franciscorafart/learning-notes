@@ -98,3 +98,6 @@ Not all services are available in all regions.
 Security is a shared responsability between Amazon and the customer(you). There's a diagram with explanations of what kind of things the user is responsible for.
 
 https://aws.amazon.com/compliance/shared-responsibility-model/
+
+### Budget
+In the billings sections of the AWS account, you are able to set up a Budget that will trigger notifications when it is reached (or about to be reached)
