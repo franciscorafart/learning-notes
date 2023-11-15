@@ -24,3 +24,19 @@ NOTE: Make sure docker and docker-compose are on the same context (default).
 #### Build and run on the background:
 
 `docker-compose up -d` Build and run dettached
+
+
+### Ports
+
+A container has ports assigned with the following format 
+`5000:6000`
+
+This is a mapping between host machine and docker container ports.
+
+The first part `5000` is the host machine's exposed port, the second `6000` is the docker container's exposed port.
+
+These services are mapped. If for example you run a postgres instance on it, it would mean that if your machine is running:
+
+A) On host machine => connect on port `5000`
+2. On a Docker container, connect to it on port `6000`
+
