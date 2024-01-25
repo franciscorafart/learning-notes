@@ -22,7 +22,42 @@ Hook to memoize variables. Useful for variables that require considerable comput
 Hook to access DOM elements directly that mutate outside of the React state. Very useful to access native browser APIs as part of HTML tags such as canvas, video, navigation, animations, scrolling, audio, etc. It "keeps" the reference.
 
 ### useImperativeHandle
-Like useRef, it allows you to change the value of the returned element. It also allows to change the behavior of native functions such as focus and blur.
+It allows you to change the value of the returned element (see below). It also allows to change (overwrite) the behavior of native functions such as focus and blur.
+
+useImperativeHandle allows for functions defined inside a ref component available on the ref object (on another component):
+
+```
+const ComponentOne = () => {
+    const ref = useRef();
+
+    const a = {
+        ref.current.myMethod(); // I can access myFunction here by using useImperativeHandle in ComponentTwo
+    }
+
+    return (
+        <ComponentTwo ref={ref}>
+    )
+}
+
+const ComponentTwo = (props, ref) => {
+    const myFunction = () => {
+        // ...do stuff
+    }
+
+    useImperativeHandle(
+        ref, 
+        () => ({
+            myFunction    
+        )},
+        []
+    );
+
+    return (
+        <div>...Some content</div>
+    );
+}
+
+```
 
 ### useLayoutEffect
 Like useEffect, it runs after React commits elements to the DOM, but before rendering. Used when we need to process a side effect before the page renders, for example, an API call or an element position calculation that depends on the DOM. It is used to avoid flickers of the UI when calculations are needed with page elements.
