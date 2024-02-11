@@ -26,3 +26,11 @@ In ubuntu by default there is no root user. You set up a user (yours) with root 
 
 `$ sudo su` => (substitute user) It spawns a terminal as a root user
 `$ sudo command` (super user do) => Run a root command without being in the root terminal. Prefer to avoids accidents.
+
+# List members of a group
+`getent group <group_name>`
+
+# List groups
+`less /etc/group`
+Or
+`getent group`
