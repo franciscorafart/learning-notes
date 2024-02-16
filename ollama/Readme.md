@@ -1,8 +1,6 @@
-# Serve
-Run `ollama serve`
-
 ## Run model
-`ollama run <model_name>`
+1. `ollama serve`
+2. `ollama run <model_name>`
 
 # Stop model
 Run `pgrep ollama`to find the process

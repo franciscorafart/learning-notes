@@ -135,3 +135,7 @@ Locates a command and returns absolute path of executable when the command is ru
 
 - `which ls`
 - Find all executables that match a string `which -a ls`
+
+## Change directory /files ownership
+
+`sudo chown -R username:group directory`
