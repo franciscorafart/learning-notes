@@ -139,3 +139,5 @@ Locates a command and returns absolute path of executable when the command is ru
 ## Change directory /files ownership
 
 `sudo chown -R username:group directory`
+# Hard disk devices
+`fdisk -l` => Lists all devices (hard disks) in the machine and partitions in them.
