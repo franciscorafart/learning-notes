@@ -12,7 +12,7 @@ With REST the query has not relationship to the response type, while in a GraphQ
 GraphQL is a query language, there's no relation to Graph DBs, it can be implemented with any type of database.
 
 ## Apollo
-Suite of tools for running and querying GrphQL servers.
+Suite of tools for running and querying GrphQL servers: Mainly GraphQL server and GraphQL Client (Also Engine)
 
 ### Apollo server
 
@@ -20,4 +20,5 @@ When running an apollo server and go to the port o dev mode, we will get the apo
 
 ### Default resolvers
 How does the server know to send exactly the data the query requests? Apollo server needs a resolver for each field of a query. When we don't define it, it gives us the default resolver for the field.
+
 
