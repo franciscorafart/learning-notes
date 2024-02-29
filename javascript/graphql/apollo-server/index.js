@@ -60,6 +60,10 @@ const typeDefs = `
             street: String!
             city: String!
         ): Person
+        editPhone(
+            name: String!
+            phone: String!
+        ): Person
     }
 `
 
@@ -105,6 +109,18 @@ const resolvers = {
             const person = {...args, id: uuid()};
             persons = persons.concat(person);
             return person;
+        },
+        editPhone: (root, args) => {
+            const p = persons.find(person => person.name === args.name);
+
+            if (!p) {
+                return null;
+            }
+
+            const updatedPerson = {...p, phone: args.phone};
+            const indexOfP = persons.findIndex(person => person.name === args.name);
+            persons[indexOfP] = updatedPerson;
+            return updatedPerson;
         }
     }
 }
