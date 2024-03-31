@@ -16,7 +16,7 @@ In MVC architecture, the Use Case / Interactor would be the equivalent of a Cont
 
 ## Entities / Domain layer
 
-Entieties are the implementation of critical business rules. They contain higher level rules and they rarely change.
+Entities are the implementation of critical business rules. They contain higher level rules and they rarely change.
 
 Entities => Core business rules (Rarely change)
 Use Cases => Application specific rules (orchestrate entities)
