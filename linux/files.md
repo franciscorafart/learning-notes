@@ -114,7 +114,7 @@ shred -vu -n 100 file1
 
 # Finding files and directories
 
-Two commands
+Three commands
 
 1. locate (mlocate)
 Searches by string and returns a list of path names containing that string. It uses a database. Run `sudo updatedb` to update the database mlocate uses. 
@@ -135,6 +135,13 @@ Locates a command and returns absolute path of executable when the command is ru
 
 - `which ls`
 - Find all executables that match a string `which -a ls`
+
+3. find
+
+Find directory by name
+`find ./ -type d -name src` => Find all directories with name src in ./ directory
+And file:
+`find ./ -type f -name index.tsx` => Find all files with name index.tsx in ./ directory
 
 ## Change directory /files ownership
 
