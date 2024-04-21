@@ -107,6 +107,9 @@ node-app:
     ports: 3000:3000
 ```
 
+You can run it directly in the Docker CLI with:
+`docker run -it --entrypoint sh <new-image-name>:<version-tag> -c bash`
+
 ## Volumes
 Docker volumes are designed to store container data. By default, DB containers will not preserve data. To preserve data we can
 preserve volumes in our docker compose file.
@@ -117,7 +120,7 @@ a `mongo_data` in the host's file system, and map it to `data/db` inside the con
 
 
 ```
-services:
+services: 
     mongo:
         ...
         volumes:
