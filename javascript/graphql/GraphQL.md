@@ -8,11 +8,11 @@ When we are querying for complex relationships, REST can become a bit awkward, a
 ## GraphQl main principle
 Front end makes a query describing the exact data it needs. In that way the query code stays simple and the front end gets exactly the data it needs.
 
-With REST the query has not relationship to the response type, while in a GraphQL query a query speifies the response type.
+With REST the query has not relationship to the response type, while in a GraphQL query a query specifies the response type.
 GraphQL is a query language, there's no relation to Graph DBs, it can be implemented with any type of database.
 
 ## Apollo
-Suite of tools for running and querying GrphQL servers: Mainly GraphQL server and GraphQL Client (Also Engine)
+Suite of tools for running and querying GraphQL servers: Mainly GraphQL server and GraphQL Client (Also Engine)
 
 ### Apollo server
 

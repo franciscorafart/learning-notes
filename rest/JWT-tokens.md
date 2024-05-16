@@ -3,7 +3,7 @@
 # What it is
 - A JWT token has 3 parts: Header, Body and Signature.
 - When a user authenticates the server will send a hashed (base64) token that contains these 3 elements.
-- Header: Thetype of token and the hashing algorithm used
+- Header: The type of token and the hashing algorithm used
 - Body: The fields that have to be stored in the body to identify the user
 - Signature: The encrypted Body + Header
 

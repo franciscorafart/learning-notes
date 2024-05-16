@@ -85,3 +85,24 @@ All we do is, instead of training a learner, we load a learner with the `load_le
 `learn = load_learner('model.pkl')`
 
 `learn.predict(image)`
+
+# Lesson 3 - Neural Net Foundations
+
+Practical Definition: ML models are things that fit functions to data. 
+This concept can be visualized as the process of adjusting the parameters of a math function (3 parameters in a quadratic function as a simple example) until it gets close to our data. A function will never match perfectly the data, there's always noise in data. 
+
+This process can be applied to more complex functions such as a neural network which can have millions of parameters, not only the 3 of a quadratic equation.
+
+### Loss calculation
+Instead of adjusting manually, we can use a loss function to inform us of how good an adjustment to parameters is. 
+
+### MSE (Mean Square Error)
+For loss calculation we use the Mean Square Error MSE, that goes:
+ 
+`(predictions - actual_values)^2 / number_of_values` The mean of the squared prediction and value difference
+
+### Gradient decent
+We can automate the process of adjusting parameters in our function. By using the derivative of a los callculation, we can figure out the gradient of each parameter. This means we can know what next modifications to them will make the loss score improve. This process is call Gradient Decent: Calculate the gardient and reduce (decent) the loss.
+
+### Rectified linear unit
+We can figure out most problems from a quadratic equation, we need more complex ones.

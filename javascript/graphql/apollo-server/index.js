@@ -67,7 +67,7 @@ const typeDefs = `
     }
 `
 
-// Resolvers have the code that define how GtraphQl queries are responded to
+// Resolvers have the code that define how GraphQl queries are responded to
 // There's a resolver for each field on the query type
 const resolvers = {
     Query: {
