@@ -88,21 +88,51 @@ All we do is, instead of training a learner, we load a learner with the `load_le
 
 # Lesson 3 - Neural Net Foundations
 
-Practical Definition: ML models are things that fit functions to data. 
+### What models are best
+There's three criteria to evaluate a neural network model (architecture)
+https://www.kaggle.com/code/jhoward/which-image-models-are-best/
+
+- Speed
+- Accuracy
+- How much memory they use
+
+#### Pytorch Image models (timm)
+Library with pre-trained computer vision models.
+
+#### What is a .pkl file?
+It's an object type called a learner, that has two main components.
+1. Learner => Pre-processing steps you did to build your model, the data loader and its params (DataBlocks, ImageDataBloks,)
+2. Trained model (`m.model`)
+    A lot of layers in a tree-like structure.
+
+### ML Models
+https://www.kaggle.com/code/franciscorafart/how-does-a-neural-net-really-work/edit
+
+Practical Definition: ML models are things that fit functions to data.
+
 This concept can be visualized as the process of adjusting the parameters of a math function (3 parameters in a quadratic function as a simple example) until it gets close to our data. A function will never match perfectly the data, there's always noise in data. 
 
 This process can be applied to more complex functions such as a neural network which can have millions of parameters, not only the 3 of a quadratic equation.
 
 ### Loss calculation
-Instead of adjusting manually, we can use a loss function to inform us of how good an adjustment to parameters is. 
+Instead of adjusting the parameters manually, which would be impossible for the millions of parameters of a Neural Network, we can use a **loss function** to inform us of how good an adjustment to parameters is.
 
-### MSE (Mean Square Error)
+#### MSE (Mean Square Error)
 For loss calculation we use the Mean Square Error MSE, that goes:
  
 `(predictions - actual_values)^2 / number_of_values` The mean of the squared prediction and value difference
 
 ### Gradient decent
-We can automate the process of adjusting parameters in our function. By using the derivative of a los callculation, we can figure out the gradient of each parameter. This means we can know what next modifications to them will make the loss score improve. This process is call Gradient Decent: Calculate the gardient and reduce (decent) the loss.
+We can automate the process of adjusting parameters in our function. By using the derivative of a los calculation, we can figure out the gradient of each parameter without the need to actually try it. This means we can know what next modifications to them will make the loss score improve. This process is call Gradient Decent: Calculate the gardient and reduce (decent) the loss.
 
 ### Rectified linear unit
 We can figure out most problems from a quadratic equation, we need more complex ones.
+
+#### Tensor
+An x dimension data structure that can store scalars (0-d), vectors (1D), matrixes (2D), and n-dimension matrixes. Tensors only store homogenous numeric data types (int64, float32) and are designed for numerical computations.
+
+### Pandas
+Pandas is useful for storing and manipulating table like data stuctures called dataframes. It's based on numpy. Data frames can store all sorts of data types.
+
+
+
