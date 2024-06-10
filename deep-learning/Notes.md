@@ -127,6 +127,7 @@ For loss calculation we use the Mean Square Error MSE, that goes:
 `(predictions - actual_values)^2 / number_of_values` The mean of the squared prediction and value difference
 
 ### Gradient decent (Calculate gradient and reduce loss)
+Stochastic Gradient Descent = The mechanism of learning by updating weights automatically.
 We can automate the process of adjusting parameters in our function. By using the derivative (grade of change of a function) of a loss calculation, we can figure out the gradient of each parameter without the need to actually try it. This means we can know what next modifications to them will make the loss score improve. This process is call Gradient Decent: Calculate the gardient and reduce (decent) the loss.
 
 #### Learning rate

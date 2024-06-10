@@ -82,3 +82,32 @@ It's needed when one db is no longer enough to store all the data.
 - Monitor and automate
 
 # Chapter 2 Back-of-the-envelope estimations
+
+# Chapter 3 Framework for System Design interviews
+Never give quick answers to a system design interview, this is a red flag. These are always open-ended questions, so always clarify what the interviewer is asking you to build and test assumptions. Always communicate with the interviewer.
+
+We can divide a system design interview in 4 steps:
+1. Understand the problem and establish design scope (3-10 minutes)
+At this point as all the relevant questions, such as features, amount of users, when scaling up will happen, tech stack, existing services company already has.
+
+2. High level design and get buy-in (10-15 minutes)
+Come up with a high level design and get feedback from the interviewer as it was a co-worker.
+- Come up with Blue print
+- Draw diagrams
+- Do back of the envelope calculations
+- Go through concrete use cases
+
+3. Design Deep Dive (10-25 minutes)
+In this stage we dive deeper into the implementation of some of the high-level components. It depends on the interviewer where they want to focus.
+
+On this step it's important not to spend too much time in any unnecessary subject.
+
+4. Wrap up (3-5 minutes)
+Follow up questions or recap of the design.
+- Bottlenecks
+- Error handling
+- Logs 
+- How to scale the design?
+- Propose refinements
+
+# Chapter 4 - Design a Rate Limiter
