@@ -1,0 +1,172 @@
+# PC
+When the LEDs are lighted with no blinking it means there's an error
+
+All data storage and transfer units transfer binary data.
+
+# Blanking plates
+These are necessary to prevent gaps. Gaps can lead to:
+- Dust accumulating => More danger of overheating
+- Make components exposed to touching and Electrostatic Discharge (ESD) that damages the components.
+- Components more exposed to Electromagnetic interferance.
+
+## Cables
+
+- Peripheral cables have assymetric chapes (or form factor) to prevent wrong insertions.
+
+### Universal Serial us cables (USB)
+
+USB is managed by a host controller, that can hold multiple ports attached to the same bus. There can be 127 devices connected to a single controller, but to avoid sharing bandwidth, motherboards provide multiple USB controllers that each have 3 or 4 ports.
+
+USB 1, 2, 3, and 4 are distinguished by their speed. Each have corresponding connector types that might look similar.
+
+#### USB 2.0
+type A: Classic rectangle USB connector (Black in the inside)
+type B (square printer type)
+type B mini: (Cameras, my old blue harddrive)
+Type B micro (Cellphone - old android)
+
+#### USB 3.0 and 3.1
+USB 3 has two sub-controllers, one handles SS (Superspeed devices) and the other legacy (1.1 and 2.0) devices. As a consequence, legacy devices don't slow down SuperSpeed devices.
+
+USB 3 has confusuing naming conventions
+USB 3.0, USB 3.1 (Gen 1), USB 3.2 (Gen 1) => All the same 625Mb/s
+USB 3.1 (GEn 2), USB 3.2 (Gen 2) => All the same 1.25GB / s
+
+Type A: Same shape as type A and compatible (They have a blue connector inside to distinguish it, or are marked with `SS` for SuperSpeed)
+Type B: Square but larger than the classic printer type cable, not physically compatible with previos type B
+Type B micro: large and thin (My LaCie drive), not physically compatible with previous type B micro.
+Type C: USC-C can handle video and laptop charging. Reversible
+
+Lightning cable => USB too
+
+#### USB 4
+Only with USB-C connectors, don't confuse it with Thunderbolt 4. USB4 is based on Thurnderbolt 3.
+Minimum 20GB/s, Max 40MB/s, handles video.
+
+#### Thunderbolt
+Standard created by Intel and Apple for transfering data, mostly in Macs. 
+Min and Max: 40GB/s, handles video.
+
+Since Thunderbolt 3, it uses a USB-C connector, Previously it had the same ad MiniDP connectors.
+
+Thunderbolt connectors have a spark to differentiate them from standard USB-C connectos
+Thurnderbolt 4 is USB4 with extra features (Spark with a 4 underneath)
+
+### Video
+
+- Video cable bandwidth determined by 
+a) resolution of the image (3840 x 2160 px - 4k)
+b) Frames per second or HZ
+
+FPS usually describes de video source, while HZ the rate of display of the monitor. To avoid artifacts they should be the same or divisible by each other.
+
+LCD => iquid Crystal Display.
+
+Video cables
+
+- Vga
+- High Definiition Multimedia (HDMI)
+- Display Port (DP)b compatible.
+
+#### HDMI
+Supports video and audio. It requires a royalty for its use
+
+#### DP
+Doesn't require a royalty. Another of it's advantages is it supports to support multiple monitors with daisy-chaining with the same video source. Using multiple HDMI monitors requires multiple video cards.
+
+#### Thurnderbolt
+
+- Lightning and thunderbolt cables are used mainly in macs, but also in PCs
+- Can be used as an interface to USB, HDMI and DP
+
+### SATA Hard drive cables
+- Serial Advancement Technoogy (SATA) => It has two cables, a power (5 wires) and a data cable (7 pins) => Most used today
+- Molex Power connector => Outdated (4 pin)
+- External SATA => Must use an eSATA cable. Not common, external drive market is dominated by USB.
+
+## Motherboards
+
+All processing and storage devices (mass storage, RAM, Cache, SCPI are connected through bus interfaces on the motherboard)
+The motherboard's clock syncs the operation of all the parts of a PC.
+Motherboards support a range of CPUs, usually manufactured by Intel or AMD.
+
+
+### Electrical safety
+- Always disconnect PC when working with it.
+- Hold power button for a few secs to ensure internal components are drained of charge.
+- Don't try to fix power supply
+
+#### Electrostatic Discharge (ED)
+Components are vulnerable to electrostatic discharge.
+- USe an anti-ESD wrist wrap
+
+### CPU sckets
+A motherboard model will only support a limited number of CPUs. CPU socket has a square shape. When installed, CPU is covered by thermal paste, heat sink and fan.
+
+### System memory slots
+- Used to add RAM, temporary memory for the execution of programs.
+- DIMM Dual Inline memory moue slots.
+
+## Adapter connectors
+
+Plug-in adapter cards inserted into expansion slots in the motherboard allow to extend the capabilities of a computer.
+Two types of expansion slot interface
+1. PCIe (Peripheral Component Interconnect Express Interface)
+
+- point-to-point serial communication. Each point-to-point connection is a link.
+    - Transfer rates measured in GT/s (gigatransfers per second)
+- Each PCIe adapter supports a specific number of lanes x1, x4, x8, x16
+    A card can go in a port with equal or greater number of lanes (Ex. x8 card will fit x8 and x16 slots)
+- A phisically larger slot might support less number of lanes. Check the label on the motherboard.
+ -PCIe versions are backwards compatible
+
+2. PCI (Peripheral Component Interconnect Interface)
+- Legacy type bus
+- 32 bits
+- Earliest 5v, latest 3.3v with different keying to avoid messing it up
+
+## Motherboard form factors
+
+ATX: Standard Form factor (size) for motherboards and cases (12x9.6 in) and up to 7 expansion slots.
+
+Micro-ATx: Square 9.6 x 9.6 in size. Can be fir into ATX cases. 
+
+nano/pico/mobile-ATX: Used in other devices and embedded systems.
+
+### Motherboard installation
+The motherboard is attached to the case using standoffs.
+
+- Remove caps and align I/O board of motherboard with holes.
+- Insert standoffs and 
+- Don't add standoffs where there's no holes to support it.
+- Secure with screws, don't overtight them
+- Connect devices to the motherboard.
+
+### Motherboard headers and power connectors
+Components on the front and rear panels connecto to Headers on the motherboard
+- Power button
+- Drive (HDD) activity lights
+- Audio ports
+- USB ports: USB 2.0 => 9 pin connectors, USB 3.0 => 2x10 format cabled to two ports
+
+#### Power connectos
+- Power connector 2-pin x 12 pin block.
+- Fan connectors 3 or 4 pin Molex KK format
+
+### Video cards and capture cards
+An expanssion card connected to PCIe or PCI can enhance the functionality of a computer in graphics, audio, capture and network.
+
+Graphics Cards are distinguished by the following features:
+- Graphics processing unit (GPU)
+- Graphics Memory - Dedicated memory to process graphics. Built-in graphic modules might use RAM for this.
+- Video ports - HDMI, DP, and Thunderbolt.
+
+#### Capture cards
+Used to capture / record video and save it as a video or straming file.
+
+### Sound cards
+
+- Audio hardware built-in to the computer is suceptible to noise from internal components. Professional audio cards are external and connect via USB or Thunderbolt.
+
+### Network interface cards
+PCs have a built in Ethernet network card but a network interface card (NIC), with multiple Ethernet ports, can be used to connect different hosts to a network.
