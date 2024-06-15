@@ -169,4 +169,24 @@ Used to capture / record video and save it as a video or straming file.
 - Audio hardware built-in to the computer is suceptible to noise from internal components. Professional audio cards are external and connect via USB or Thunderbolt.
 
 ### Network interface cards
-PCs have a built in Ethernet network card but a network interface card (NIC), with multiple Ethernet ports, can be used to connect different hosts to a network.
+PCs have a built in Ethernet network card but a network interface card (NIC), with multiple Ethernet ports (RJ-45), can be used to connect different hosts to a network.
+
+## Legacy cables
+
+### DVI
+Supports Analog and Digital signals
+
+### VGA
+
+
+### SCSI
+Modern buses like USB and Thunderbolt use serial communication. Back in the day serial communication was much slower, so parallel data transmission was used to support better data transfer rates.
+
+### Integrated Drive Electronic Interface (IDE)
+The main mass storage interface for many years. 16 bit parallel transfer (Gray flat cable to connect devices with thre color-coded connectors)
+
+The SCSI connector was a 68 pin connector used for parallel bus data transfers.
+
+### Serial cables
+9 pin connector that transfered one bit at a time, used mainly to connect external modems. USB is also a serial connector but much faster.
+
