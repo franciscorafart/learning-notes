@@ -159,6 +159,53 @@ The process is first to multiply the matrices of values and THEN apply the Relus
 ### Normalizing data
 Expressing all data between 0 and 1 (FastAI does this for you)
 
+### Numpy and PyTorch
+Numpy is library for numerical and scientific programming, similiar to Pytorch. Doesn't give access to GPU processing or calculating gradients => For deep learning PyTorch is better.
+
+Numpy and Pytorch can do calculations many times faster than Python arrays.
+Numpy Array => Multidimensional table of data (1d array, 2d table, 3d table of tables / cube, etc).
+
+Pytorch tensors have additional capabilities to Numpy arrays. 
+ - PyTorch tensors can live in the GPU, so they run much faster
+ - Can calculate derivatives or gradients
+
+Tip: Avoid writing loops in python and run all processes with PyTorch methods.
+
+### Array / Tensor API
+A lot of the Numpy and Pytorch syntax is identical
+
+#### Declaration
+```
+data = [[1,2,3], [4,5,6]] # python list
+arr = array(data) # numpy array
+tns = tensor(data) # Pytorch tensor
+
+array([[1, 2, 3],
+       [4, 5, 6]]) # numpy
+
+tensor([[1, 2, 3],
+       [4, 5, 6]]) # tensor
+```
+
+### Select element
+tns[1] # tensor([4,5,6])
+
+### Select column
+tns[:,1] # tensor([2, 5])
+
+#### Select row and sub set of if
+tns[1, 1:3] # tensor([4,5])
+
+### Operations
+tns+1 # tensor([2,3,4], [5,6,7])
+
+### Type
+tns.type() # torch.LongTensor
+
+#### Change type to Floar
+tns*1.0 # tensor([1.0000, 2.0000, 3.0000], [4.000, 5.0000, 6.0000])
+
+
 #### Tensor
 An x dimension data structure that can store scalars (0-d), vectors (1D), matrixes (2D), and n-dimension matrixes. Tensors only store homogenous numeric data types (int64, float32) and are designed for numerical computations.
 
