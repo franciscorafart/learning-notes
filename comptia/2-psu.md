@@ -150,3 +150,113 @@ RAM memory is used to run applications and files. More RAM increases computer's 
 
 ### RAM Types
 
+DDR SDRAM = Double Data Rate - Synchronous Dynamic - Random Access Memory
+
+Data Rate => One bit per clock cycle
+Double Data Rate => Two transfers per clock cycle
+Synchronous Dynaic (SDRAM) => Synchronized to the motherboard's clock.
+
+- DDR memory Labeled using the higherst theoretical bandwidth (PC1600, PC2100)
+- Subsequent DDR technologies increase speed by multiplying the bus speed, not the speed at which the actual device works.
+
+### Memory Modules
+Printed circuit board that holds a number of RAM devices and act as a single unit.
+- Desktop DDR is packed in a DIMM form factor (Dual Inline Memory Module)
+- Notches / keys on the module (ranuras) identify the DDR generation (DDR3, DDR4, DDR5) and prevent from being placed in a wrong slot or direction.
+- DDR type must match de motherboard
+- Laptop RAM is packed into smaller SODIMM form factor.
+
+### Multichannel system Memory
+In the 2000 memory became a bottleneck due to the improvement of CPU. Intel and AMD developed dual-channel architecture for Memory controllers.
+- Single-channel: 1 64-bit data bus between CPU, memory controller and RAM device.
+- Dual channel: 2 64-bit pathways
+
+### ECC RAM
+Error correcting code (ECC) RAM
+- For servers taht require high level of reliabiliy
+- Performs hash calculations and stores an 8-bit checksum for each transfer
+- Checksum requires extra processor chip and a 72-bit data bus
+- System can detect and correct single-bit errors
+- ECC can detect 2,3,4 bit errors but cannot correct them.
+- Supplied as Registered DIMMs (RDIMMs)
+
+- Motherboard and CPU must support ECC operation
+- Motherboards support RDIMM or UDIMM, not both
+
+## Install CPUS
+ - Ground ESC device to inside of the case
+- Dettach Heat Sink and carefully pull out
+- Dettach CPU and carefully pull out
+- Align pin one (colored) with the marking on the CPU. Don't force it, just let it attach.
+- Apply small bit of thermal paste (a drop)
+- Replace Heat Sink
+- Connect power supply to heat sink
+- If Updating the CPU, might require firmware update
+
+Questions:
+ - What is a controller? Between RAM and motherboard
+
+## CPU Architecture
+- CPU grabs instructions from application which are stored in system memory
+- Executes instructions, passes is to Arithmetic Logic Unit (ALU) or Floating-point unit (FPU)
+- Result of execution passed back to a register, cache, or system memory
+    - cache stores instructions and data that the system uses regulary
+
+### x86
+Architecture to optimize the fetch, decode, execute and writeback operations while maitaining compatibility If defines a CPU as IBM PC compatible. 
+- Designed and manufactured by Intel and AMD
+- 32 bit instruction set
+
+### x64
+- 64 bit instruction set
+- Developed by AMD and implemented by Intel as Intel64
+
+Software must be compiled to run as 64 bit or 32 bit CPU. A 64-bit machine can run 32 bit software, but not the other way around.
+
+### ARM CPU architecture
+Advanced RISC Machines (ARM)
+
+AMD doesn't manufacture CPUs, they produce designs and hardware other vendors produce.
+- System on Chip (SoC) => All controllers (Audio, video, networking, storage) are part of the CPU
+- Simpler instructions that x64 / x86
+- Thermally and power efficient (longer battery life)
+- Used on Apple devices, Android phones mostly, Chromebooks, some Windows laptops.
+
+- OS and hardware drivers must be compiled to operate on an ARM device  
+- Emulation is possible to execute x86 and x64 applications, with a performance penalty.
+
+### CPU features
+- SMT (Simultaneous Multithreaded) makes it possible to ake execution more efficient, even though most programs are single-threaded.
+- SMP Symmetric Multo processing: A SMP OS can allow for running application processes whenever CPU is available. Costly, more common in servers and high-end workstations.
+- Single, dual, and multicore with multiple processors. 
+- A computer can run multiple OS with Virtual Machines(VM) if the CPU supports it.
+
+### CPU Socket Types
+
+Intel ad AMD use different socket types.
+- All use a Zero Insertion Force mechanism (ZIF), to reduce the risk of damaging pins.
+
+#### Form Factors
+- Intel: Land Grid Array (LGA). Placed on a hinged plate and secured with a locking lever. Rectangular.
+
+- AMD: Pin Grade Array (PGA). Align Pin 1 of the socket with Pin 1 of the CPU. Square shape.
+
+To remove:
+- Remove the heat sink with a gentle twist to avoid the CPU sticking to it.
+- Release the latch before attempting to take the CPU
+- Clean old thermal paste
+- Apply new thermal paste, just a bit
+
+### CPU types and motherboard compatibility
+
+#### Generations
+CPUs are released with architectural improvements and new socket designs often. These are classified with the term Generation.
+- Motherboard compatibility is limited to same generation CPUs
+- It's rare that you can upgrade the CPU without upgrading the motherboard
+
+CPU brands target different segments of the market with each generation
+
+- Desktops => From budget to Gaming PCs
+- Workstations => More powerful PCs for video editing, software development, or business PC
+- Servers =>  Designed for more reliable and greater workloads. Support multi-socket for CPUs. Support for tens of hundreds of EEC RAM
+- Mobiles => Mobiles tend to use mobile CPUs with different form factors. They're soldered to the motherboard so can't be replaced.
