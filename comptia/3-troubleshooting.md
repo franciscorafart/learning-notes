@@ -88,3 +88,9 @@ Specification for Harware-based storage of digital certificates, cryptographic k
 Hardware Security Module (HSM)
 - A thumb drive to store cryptographic material in case disk needs to be moved. 
 - Secure: It has to be authenticated to be used (password, pin, fingerprint)
+
+# ASCII => byte equivalent for characters
+# Unicode => extended byte equivalent for characters
+MAC address => Device information.
+
+## Troubleshoot Power and Disk issue

@@ -173,7 +173,7 @@ In the 2000 memory became a bottleneck due to the improvement of CPU. Intel and 
 
 ### ECC RAM
 Error correcting code (ECC) RAM
-- For servers taht require high level of reliabiliy
+- For servers that require high level of reliabiliy
 - Performs hash calculations and stores an 8-bit checksum for each transfer
 - Checksum requires extra processor chip and a 72-bit data bus
 - System can detect and correct single-bit errors

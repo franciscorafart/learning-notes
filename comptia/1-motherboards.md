@@ -29,8 +29,10 @@ Type B micro (Cellphone - old android)
 USB 3 has two sub-controllers, one handles SS (Superspeed devices) and the other legacy (1.1 and 2.0) devices. As a consequence, legacy devices don't slow down SuperSpeed devices.
 
 USB 3 has confusuing naming conventions
-USB 3.0, USB 3.1 (Gen 1), USB 3.2 (Gen 1) => All the same 625Mb/s
-USB 3.1 (GEn 2), USB 3.2 (Gen 2) => All the same 1.25GB / s
+USB 3.0, USB 3.1 (Gen 1), USB 3.2 (Gen 1) => All the same 625Mb/s Up to 10GB (Supports Type A)
+USB 3.1 (G2n 2), USB 3.2 (Gen 2) => All the same 1.25GB / s
+
+USB 3.2 Gen 2x2 => Only USB-C typeconnector, up to 20GB/s
 
 Type A: Same shape as type A and compatible (They have a blue connector inside to distinguish it, or are marked with `SS` for SuperSpeed)
 Type B: Square but larger than the classic printer type cable, not physically compatible with previos type B
@@ -49,7 +51,7 @@ Min and Max: 40GB/s, handles video.
 
 Since Thunderbolt 3, it uses a USB-C connector, Previously it had the same ad MiniDP connectors.
 
-Thunderbolt connectors have a spark to differentiate them from standard USB-C connectos
+Thunderbolt connectors have a spark to differentiate them from standard USB-C connectors
 Thurnderbolt 4 is USB4 with extra features (Spark with a 4 underneath)
 
 ### Video
