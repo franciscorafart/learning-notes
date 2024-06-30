@@ -59,7 +59,7 @@ Boot options sequence specifies the order in which the devices are booted.
     M.2 => Listed as NVMe
 - Optical drive
 - USB => Usually for OS installs or repair utilities
-- Network / PXE
+- Network / PXE => If an admin want's to use ane xternal server to configure desktop machines
 
 ## USB permissions
 In Security, we can enable permissions for USB drives, as they pose a security risk, or even disable them/
@@ -80,7 +80,7 @@ UEFI systems provide built-in secure storage of cryptographic keys.
 Hashes => For verifying two copies of data are the same, original data cannot be recovered from it.
 
 Trusted Platform Module (TPM)
-Specification for Harware-based storage of digital certificates, cryptographic keys, and hashed passwrods
+Specification for Harware-based storage of digital certificates, cryptographic keys, and hashed passwords
 - It has a unique unchangeable key called `endorsement key`
 - At boot time TPM compares hashes of key system state data to ensure they haven't been tampered with.
 - It can be enabled or disabled in the system setup program or in the OS
@@ -143,6 +143,7 @@ Corruption of files, malware, multiple OS, fault of disk might prevent system to
 2 ways of formatting boot information:
 1. Master Boot Record (MBR) => Legacy. First sector of the first partition contains info of partitions and code that points to location of active boot sector. This will typically be Boot Configuration Data (BCD) in Windows and GRUB or LILO in Linux. Only one boot sector can be active.
 2. Globally unique Partition Table (GPT)
+Boot information is not on single sector
 
 Damage to these records results in "Boot Device Not Found errors" / "Invalid Drive Specification" => If problem caused by malware useboot disk option in anti-virus
 Or Use repair options with OS setup disk.
@@ -237,3 +238,13 @@ Projectors light bulbs often need to be replaced.
 - Intermittend projector image => Usually caused by heating
 
 ## Troubleshoot video quality issues
+Glitches on video display => Input source or device itself
+- Dim image => Check brightness configuration or auto brightness. If not, display backlight failed (repair or replace)
+- Fuzzy image => Input resolution doesn't match device's resolution
+- Flashing screen => Check connections. If not, display backlight starting to fail.
+- Dead pixels => There are software utilities to attempt to unstuck a fixed-brightness pixel. Sometimes they can be unstuck with a gentle press with an eraser.
+- Burn-In => Image is permanently burned into the screen when a static image stays for too long. OLED screens more vulnerable to this. Solution: Use a screensaver.
+    LED => Led backlight
+    OLED => Each pixel has its own illumination.
+- Incorrect color => Use system's configuration to match the color to the print out.
+- Audio issues => Check audio output is correctly configured.

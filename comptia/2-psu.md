@@ -27,7 +27,7 @@ Power is supplied by a PSU through different voltage rails:
 ## Power supply connectors - The P1
 
 There's only one power supply connecor for the motherboard: The P1
-A motherboard will have a number of other Molex and SATA power cables, and 4/6/8 pin connectors for CPU and PCIe cards.
+A motherboard will have a number of other Molex (4-pin) and SATA power cables (15-pin), and 4/6/8 pin connectors for CPU and PCIe cards.
 
 - ATX P1 connector has 20 pins (2 x 10)
 - ATX12V v2 (More common now) => 24 pin (2x12) P1 form factor.

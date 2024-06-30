@@ -115,7 +115,7 @@ Plug-in adapter cards inserted into expansion slots in the motherboard allow to 
 Two types of expansion slot interface
 1. PCIe (Peripheral Component Interconnect Express Interface)
 
-- point-to-point serial communication. Each point-to-point connection is a link.
+- point-to-point Serial communication. Each point-to-point connection is a link. 
     - Transfer rates measured in GT/s (gigatransfers per second)
 - Each PCIe adapter supports a specific number of lanes x1, x4, x8, x16
     A card can go in a port with equal or greater number of lanes (Ex. x8 card will fit x8 and x16 slots)
@@ -126,7 +126,14 @@ Two types of expansion slot interface
 - Legacy type bus
 - 32 bits
 - Earliest 5v, latest 3.3v with different keying to avoid messing it up
+- Slot not compatible with PCIe, though some motherboards support both.
+- Parallel communication.
 
+## Modern connectors
+- Usually reversible
+- They use edge contacts instead of inernal connection points.
+- Sometimes use keying
++
 ## Motherboard form factors
 
 ATX: Standard Form factor (size) for motherboards and cases (12x9.6 in) and up to 7 expansion slots.
@@ -186,9 +193,14 @@ Modern buses like USB and Thunderbolt use serial communication. Back in the day 
 
 ### Integrated Drive Electronic Interface (IDE)
 The main mass storage interface for many years. 16 bit parallel transfer (Gray flat cable to connect devices with thre color-coded connectors)
+(Gray flat cable to connect devices with thre color-coded connectors. Pin 1 is red)
 
-The SCSI connector was a 68 pin connector used for parallel bus data transfers.
+The SCSI connector was a 68 pin connector used for parallel bus data transfers. => It is used typically to connect storage devices. Each device connected has to be configured with a unique ID from 0-15
+
+### EIDE (e-IDE)
+Extended IDE 
 
 ### Serial cables
-9 pin connector that transfered one bit at a time, used mainly to connect external modems. USB is also a serial connector but much faster.
 
+- COM port (RS-232 connector) port is serial port uses less sophisticated signaling methods than USB. 9 pin connector that transfered one bit at a time (serial), used mainly to connect external modems.
+- USB is also a serial connector but much faster.
