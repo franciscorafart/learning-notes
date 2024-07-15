@@ -106,7 +106,7 @@ Components are vulnerable to electrostatic discharge.
 A motherboard model will only support a limited number of CPUs. CPU socket has a square shape. When installed, CPU is covered by thermal paste, heat sink and fan.
 
 ### System memory slots
-- Used to add RAM, temporary memory for the execution of programs.
+- Used to add RAM, temporary memory for the execution of programs, in-data use, and system kernell
 - DIMM Dual Inline memory moue slots.
 
 ## Adapter connectors
