@@ -56,3 +56,47 @@ Printers support a range of connection interfaces
     - Vector graphics: Instructions on how drwa an image insted of pixel-by-pixel Bitmap
     - Color printing: Printers use the reflective properties of Cyan, Magenta, Yellow and Black (CMYK) instead of the RGB of screen displays. PDL supports correct translation between on-screen color and print out.
 - Choice of PDL depends on compatibility with software apps:  PostSCript (Adobe), Printer Control Language - PCL (HP)
+
+## Printer Properties
+- Drivers and Apps have default configuration for a printer
+
+Windows
+- Printer properties:
+    Config for printer object and underlying hardware: sharing, port, driver update, duplex setup, default paper, default tray
+    About Tab: Info on the printer and drivers
+- Printe Preferences
+
+## Printer Preferences
+- Sets default print job options: paper orientation, color/black-white.
+- Set for general or per=job basis
+
+### Paper quality
+- size and type of paper
+- draft / normal mode (save ink)
+- color / grayscale
+
+### Finishing
+- duplex option
+- multiple images per sheet
+- portrait / landscape
+
+## Printer sharing
+- Some printers have an embedded print server => Allows clients to connect directly without going through a computer or server
+- Public printer: No access controls, any guest can use
+- 
+### Windows Print Server Configuration
+- Any device with installed printer device can share tehe printer object with other computers
+- Print server ca be connected to the printer over USB or network, giving administrator more control over who can use it.
+- Printer object can have permissions enabled
+- Share Sharing tab in printer properties
+- If connected clients have different OS, you need to install the corresponding drivers
+- Windows 10: Type 4 drivers => Single driver will work with multiple devices. Specific drivers are obtained by client via Windows Update instead of from print server.
+
+### Shared Printer Connections
+
+- Ordinary users can connect to printer if server admin gives them access => They can look for network on Network tab on file explorer
+
+## Printer Security
+
+Issues: Access to print services and print out of confidential material.
+
