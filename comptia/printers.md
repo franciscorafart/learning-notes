@@ -100,3 +100,35 @@ Windows
 
 Issues: Access to print services and print out of confidential material.
 
+### User Authentication
+- Print servers can be put behind user authentication to prevent unauthorized people from using it.
+- They can be configured in Print Share
+- Authentication could be in the device itself
+
+### Secure Print and Badging
+- Secured print => Held in the device until user authenticates
+- Release authentication with: PIN, Badge (card reader)
+- Secure prints are cached for a limited time
+
+### Audit logs
+- Device can be configred to log each job
+- Used to identify printed documents or to identify unauthorized release of information
+- Print-device logs can be configured to be sent to a centralized log server
+
+## Scanner configuration
+
+- Office printers are usually Multi-function devices (MFD), that include scanners
+- Optical Character Recognition (OCR) => Software to convert scanned text into characters for edit
+
+### Scanner Types
+- Flarbed scanner => Created bitmap of object by shining line at the object on a glass surface.
+- Automatic Document Feeder => Passes Paper over fixed scan head (Better for multipage documents)
+
+### Network Scan Devices
+- MFD or standalone scanner be configured as a network device like a printer. On a network, scan output can be redirected:
+    - Scan to email: Scanner must be configured with IP address of SMTP server
+    - Server Message Block (SMB) or scan to folder: Scan stored as a file on a shared network folder.
+    - Scan to cloud: File uploaded directly to cloud storage (Dropbox, OneDrive).
+
+# Replace Print Device Consumables
+
