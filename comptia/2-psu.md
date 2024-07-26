@@ -166,6 +166,8 @@ Printed circuit board that holds a number of RAM devices and act as a single uni
 - DDR type must match de motherboard
 - Laptop RAM is packed into smaller SODIMM form factor.
 
+DIMM form factors visualization: https://www.itechtics.com/dimm-sodimm-microdimm/
+
 ### Multichannel system Memory
 In the 2000 memory became a bottleneck due to the improvement of CPU. Intel and AMD developed dual-channel architecture for Memory controllers.
 - Single-channel: 1 64-bit data bus between CPU, memory controller and RAM device.
