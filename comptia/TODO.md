@@ -1,3 +1,4 @@
+Core 1
 1. Review Solid State Drives chapter. Lesson 2.
 Learn difference between different kinds of interfaces (M.2 NVM, mSata connector)
 PCI based SSD
@@ -11,3 +12,6 @@ SATA or mSATA based SSDs.
 6. Virtual Machine software names for different OSs
 7. Single and Multi-Mode fiber. Exam Objective 3.1
 8. Dot-matrix printer
+
+Core 2
+- Review all windows chapters with windows machine
