@@ -1,0 +1,553 @@
+
+Running check 'Phase 1: Preparation'
+=================
+APT Repositories:
+=================
+Repos:
+  No active apt repos in: /etc/apt/sources.list 
+  Active apt repos in: /etc/apt/sources.list.d/additional-repositories.list 
+  1: deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable
+  Active apt repos in: /etc/apt/sources.list.d/brave-browser-release.list 
+  1: deb [arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main
+  Active apt repos in: /etc/apt/sources.list.d/docker.list 
+  1: deb [arch=amd64 signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu focal stable
+  Active apt repos in: /etc/apt/sources.list.d/github-cli.list 
+  1: deb [arch=amd64 signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main
+  Active apt repos in: /etc/apt/sources.list.d/google-chrome.list 
+  1: deb [arch=amd64] https://dl.google.com/linux/chrome/deb/ stable main
+  Active apt repos in: /etc/apt/sources.list.d/heroku.list 
+  1: deb https://cli-assets.heroku.com/apt ./
+  Active apt repos in: /etc/apt/sources.list.d/mongodb-org-3.4.list 
+  1: deb [ arch=amd64,arm64 ] http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.4 multiverse
+  Active apt repos in: /etc/apt/sources.list.d/mongodb-org-6.0.list 
+  1: deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/6.0 multiverse
+  Active apt repos in: /etc/apt/sources.list.d/ngrok.list 
+  1: deb https://ngrok-agent.s3.amazonaws.com buster main
+  Active apt repos in: /etc/apt/sources.list.d/nordvpn.list 
+  1: deb https://repo.nordvpn.com/deb/nordvpn/debian stable main
+  Active apt repos in: /etc/apt/sources.list.d/oem-somerville-meera-tgl-meta.list 
+  1: deb http://dell.archive.canonical.com/ focal somerville
+  2: deb http://dell.archive.canonical.com/ focal somerville-meera-tgl
+  Active apt repos in: /etc/apt/sources.list.d/official-package-repositories.list 
+  1: deb http://packages.linuxmint.com una main upstream import backport #id:linuxmint_main
+  2: deb http://archive.ubuntu.com/ubuntu focal main restricted universe multiverse
+  3: deb http://archive.ubuntu.com/ubuntu focal-updates main restricted universe multiverse
+  4: deb http://archive.ubuntu.com/ubuntu focal-backports main restricted universe multiverse
+  5: deb http://security.ubuntu.com/ubuntu/ focal-security main restricted universe multiverse
+  6: deb http://archive.canonical.com/ubuntu/ focal partner
+  Active apt repos in: /etc/apt/sources.list.d/slack.list 
+  1: deb https://packagecloud.io/slacktechnologies/slack/debian/ jessie main
+  Active apt repos in: /etc/apt/sources.list.d/spotify.list 
+  1: deb http://repository.spotify.com stable non-free
+  Active apt repos in: /etc/apt/sources.list.d/stripe.list 
+  1: deb [signed-by=/usr/share/keyrings/stripe.gpg] https://packages.stripe.dev/stripe-cli-debian-local stable main
+  Active apt repos in: /etc/apt/sources.list.d/sublime-text.list 
+  1: deb https://download.sublimetext.com/ apt/stable/
+  Active apt repos in: /etc/apt/sources.list.d/vscode.list 
+  1: deb [arch=amd64,arm64,armhf] http://packages.microsoft.com/repos/code stable main
+=================
+
+Running check 'Linux Mint version'
+Check succeeded:  Linux Mint version
+
+Running check 'Power source'
+Check succeeded:  Power source
+
+Running check 'APT cache'
+rm -rf /var/lib/apt/lists/*
+DEBIAN_PRIORITY=critical apt-get update
+Get:1 http://archive.ubuntu.com/ubuntu focal InRelease [265 kB]
+Get:2 http://archive.canonical.com/ubuntu focal InRelease [12.1 kB]
+Ign:3 http://packages.linuxmint.com una InRelease
+Get:4 http://security.ubuntu.com/ubuntu focal-security InRelease [128 kB]
+Get:6 https://brave-browser-apt-release.s3.brave.com stable InRelease [7547 B]
+Get:7 http://packages.linuxmint.com una Release [24.1 kB]
+Get:9 http://archive.canonical.com/ubuntu focal/partner amd64 Packages [856 B]
+Get:10 https://download.sublimetext.com apt/stable/ InRelease [2536 B]
+Get:11 https://repo.nordvpn.com/deb/nordvpn/debian stable InRelease [5305 B]
+Get:12 http://repository.spotify.com stable InRelease [3316 B]
+Err:6 https://brave-browser-apt-release.s3.brave.com stable InRelease
+  The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 0686B78420038257
+Get:13 https://cli.github.com/packages stable InRelease [3917 B]
+Get:14 https://download.docker.com/linux/ubuntu focal InRelease [57.7 kB]
+Get:15 http://dell.archive.canonical.com focal InRelease [540 kB]
+Get:16 http://archive.canonical.com/ubuntu focal/partner Translation-en [384 B]
+Get:17 https://dl.google.com/linux/chrome/deb stable InRelease [1825 B]
+Get:18 http://archive.ubuntu.com/ubuntu focal-updates InRelease [128 kB]
+Get:5 https://cli-assets.heroku.com/apt ./ InRelease [2290 B]
+Get:19 http://packages.linuxmint.com una Release.gpg [833 B]
+Get:20 https://repo.nordvpn.com/deb/nordvpn/debian stable/main i386 Packages [3535 B]
+Get:21 http://archive.ubuntu.com/ubuntu focal-backports InRelease [128 kB]
+Err:12 http://repository.spotify.com stable InRelease
+  The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 6224F9941A8AA6D1
+Get:23 https://ngrok-agent.s3.amazonaws.com buster InRelease [20.3 kB]
+Get:24 https://repo.nordvpn.com/deb/nordvpn/debian stable/main amd64 Packages [3542 B]
+Get:25 https://cli.github.com/packages stable/main amd64 Packages [344 B]
+Ign:26 http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.4 InRelease
+Get:27 http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.4 Release [3457 B]
+Get:8 https://packages.microsoft.com/repos/code stable InRelease [3590 B]
+Get:28 http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.4 Release.gpg [801 B]
+Get:29 https://dl.google.com/linux/chrome/deb stable/main amd64 Packages [1098 B]
+Ign:30 https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/6.0 InRelease
+Get:31 https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/6.0 Release [3094 B]
+Get:32 http://archive.ubuntu.com/ubuntu focal/main i386 Packages [718 kB]
+Get:33 https://packages.stripe.dev/stripe-cli-debian-local stable InRelease [4286 B]
+Get:34 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages [48.8 kB]
+Err:5 https://cli-assets.heroku.com/apt ./ InRelease
+  The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 868C56076B935C6E
+Get:35 https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/6.0 Release.gpg [866 B]
+Get:22 https://packagecloud.io/slacktechnologies/slack/debian jessie InRelease [29.1 kB]
+Get:36 http://packages.linuxmint.com una/main amd64 Packages [16.2 kB]
+Get:37 http://security.ubuntu.com/ubuntu focal-security/main amd64 Packages [3125 kB]
+Get:38 http://packages.linuxmint.com una/main i386 Packages [15.6 kB]
+Get:39 http://packages.linuxmint.com una/upstream amd64 Packages [50.4 kB]
+Get:40 http://archive.ubuntu.com/ubuntu focal/main amd64 Packages [970 kB]
+Get:41 http://packages.linuxmint.com una/upstream i386 Packages [13.5 kB]
+Get:42 http://packages.linuxmint.com una/import amd64 Packages [7783 B]
+Get:43 https://download.sublimetext.com apt/stable/ Packages [8584 B]
+Get:44 http://packages.linuxmint.com una/import i386 Packages [3273 B]
+Get:45 http://packages.linuxmint.com una/backport amd64 Packages [90.3 kB]
+Get:46 https://ngrok-agent.s3.amazonaws.com buster/main amd64 Packages [5264 B]
+Get:47 http://packages.linuxmint.com una/backport i386 Packages [27.1 kB]
+Get:48 https://ngrok-agent.s3.amazonaws.com buster/main i386 Packages [4990 B]
+Get:49 http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.4/multiverse arm64 Packages [16.4 kB]
+Err:33 https://packages.stripe.dev/stripe-cli-debian-local stable InRelease
+  The following signatures were invalid: EXPKEYSIG DEEBD57F917C83E3 Stripe <security@stripe.com>
+Get:50 http://archive.ubuntu.com/ubuntu focal/main Translation-en [506 kB]
+Get:51 http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.4/multiverse amd64 Packages [16.4 kB]
+Get:52 http://dell.archive.canonical.com focal/somerville i386 Packages [5584 B]
+Get:53 https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/6.0/multiverse arm64 Packages [66.7 kB]
+Get:54 http://dell.archive.canonical.com focal/somerville amd64 Packages [8678 B]
+Get:55 http://dell.archive.canonical.com focal/somerville-meera-tgl amd64 Packages [1057 B]
+Get:56 http://dell.archive.canonical.com focal/somerville-meera-tgl i386 Packages [848 B]
+Get:57 http://archive.ubuntu.com/ubuntu focal/main amd64 DEP-11 Metadata [494 kB]
+Get:58 https://packages.microsoft.com/repos/code stable/main arm64 Packages [17.5 kB]
+Get:59 https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/6.0/multiverse amd64 Packages [70.4 kB]
+Get:60 https://packages.microsoft.com/repos/code stable/main armhf Packages [17.6 kB]
+Get:61 https://packages.microsoft.com/repos/code stable/main amd64 Packages [17.4 kB]
+Get:62 http://archive.ubuntu.com/ubuntu focal/main amd64 c-n-f Metadata [29.5 kB]
+Get:63 http://archive.ubuntu.com/ubuntu focal/restricted amd64 Packages [22.0 kB]
+Get:64 http://archive.ubuntu.com/ubuntu focal/restricted i386 Packages [8112 B]
+Get:65 http://archive.ubuntu.com/ubuntu focal/restricted Translation-en [6212 B]
+Get:66 http://archive.ubuntu.com/ubuntu focal/restricted amd64 c-n-f Metadata [392 B]
+Get:67 http://archive.ubuntu.com/ubuntu focal/universe i386 Packages [4642 kB]
+Get:69 http://security.ubuntu.com/ubuntu focal-security/main i386 Packages [795 kB]
+Get:68 https://packagecloud.io/slacktechnologies/slack/debian jessie/main amd64 Packages [2983 B]
+Get:70 http://security.ubuntu.com/ubuntu focal-security/main Translation-en [464 kB]
+Get:71 http://security.ubuntu.com/ubuntu focal-security/main amd64 DEP-11 Metadata [65.3 kB]
+Get:72 http://security.ubuntu.com/ubuntu focal-security/main amd64 c-n-f Metadata [14.1 kB]
+Get:73 http://security.ubuntu.com/ubuntu focal-security/restricted i386 Packages [38.1 kB]
+Get:74 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 Packages [3034 kB]
+Get:75 http://archive.ubuntu.com/ubuntu focal/universe amd64 Packages [8628 kB]
+Get:76 http://security.ubuntu.com/ubuntu focal-security/restricted Translation-en [425 kB]
+Get:77 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 DEP-11 Metadata [212 B]
+Get:78 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 c-n-f Metadata [544 B]
+Get:79 http://security.ubuntu.com/ubuntu focal-security/universe amd64 Packages [999 kB]
+Get:80 http://security.ubuntu.com/ubuntu focal-security/universe i386 Packages [674 kB]
+Get:81 http://security.ubuntu.com/ubuntu focal-security/universe Translation-en [212 kB]
+Get:82 http://security.ubuntu.com/ubuntu focal-security/universe amd64 DEP-11 Metadata [127 kB]
+Get:83 http://security.ubuntu.com/ubuntu focal-security/universe amd64 c-n-f Metadata [21.1 kB]
+Get:84 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 Packages [24.8 kB]
+Get:85 http://security.ubuntu.com/ubuntu focal-security/multiverse i386 Packages [7204 B]
+Get:86 http://security.ubuntu.com/ubuntu focal-security/multiverse Translation-en [5968 B]
+Get:87 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 DEP-11 Metadata [940 B]
+Get:88 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 c-n-f Metadata [540 B]
+Get:89 http://archive.ubuntu.com/ubuntu focal/universe Translation-en [5124 kB]
+Get:90 http://archive.ubuntu.com/ubuntu focal/universe amd64 DEP-11 Metadata [3603 kB]
+Get:91 http://archive.ubuntu.com/ubuntu focal/universe amd64 c-n-f Metadata [265 kB]
+Get:92 http://archive.ubuntu.com/ubuntu focal/multiverse i386 Packages [74.7 kB]
+Get:93 http://archive.ubuntu.com/ubuntu focal/multiverse amd64 Packages [144 kB]
+Get:94 http://archive.ubuntu.com/ubuntu focal/multiverse Translation-en [104 kB]
+Get:95 http://archive.ubuntu.com/ubuntu focal/multiverse amd64 DEP-11 Metadata [48.4 kB]
+Get:96 http://archive.ubuntu.com/ubuntu focal/multiverse amd64 c-n-f Metadata [9136 B]
+Get:97 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [3495 kB]
+Get:98 http://archive.ubuntu.com/ubuntu focal-updates/main i386 Packages [1016 kB]
+Get:99 http://archive.ubuntu.com/ubuntu focal-updates/main Translation-en [542 kB]
+Get:100 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 DEP-11 Metadata [276 kB]
+Get:101 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 c-n-f Metadata [17.7 kB]
+Get:102 http://archive.ubuntu.com/ubuntu focal-updates/restricted amd64 Packages [3152 kB]
+Get:103 http://archive.ubuntu.com/ubuntu focal-updates/restricted i386 Packages [39.4 kB]
+Get:104 http://archive.ubuntu.com/ubuntu focal-updates/restricted Translation-en [442 kB]
+Get:105 http://archive.ubuntu.com/ubuntu focal-updates/restricted amd64 DEP-11 Metadata [212 B]
+Get:106 http://archive.ubuntu.com/ubuntu focal-updates/restricted amd64 c-n-f Metadata [540 B]
+Get:107 http://archive.ubuntu.com/ubuntu focal-updates/universe i386 Packages [801 kB]
+Get:108 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [1218 kB]
+Get:109 http://archive.ubuntu.com/ubuntu focal-updates/universe Translation-en [294 kB]
+Get:110 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 DEP-11 Metadata [444 kB]
+Get:111 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 c-n-f Metadata [27.8 kB]
+Get:112 http://archive.ubuntu.com/ubuntu focal-updates/multiverse i386 Packages [8440 B]
+Get:113 http://archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 Packages [27.1 kB]
+Get:114 http://archive.ubuntu.com/ubuntu focal-updates/multiverse Translation-en [7936 B]
+Get:115 http://archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 DEP-11 Metadata [940 B]
+Get:116 http://archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 c-n-f Metadata [616 B]
+Get:117 http://archive.ubuntu.com/ubuntu focal-backports/main amd64 Packages [45.7 kB]
+Get:118 http://archive.ubuntu.com/ubuntu focal-backports/main i386 Packages [36.1 kB]
+Get:119 http://archive.ubuntu.com/ubuntu focal-backports/main Translation-en [16.3 kB]
+Get:120 http://archive.ubuntu.com/ubuntu focal-backports/main amd64 DEP-11 Metadata [7980 B]
+Get:121 http://archive.ubuntu.com/ubuntu focal-backports/main amd64 c-n-f Metadata [1420 B]
+Get:122 http://archive.ubuntu.com/ubuntu focal-backports/restricted amd64 DEP-11 Metadata [212 B]
+Get:123 http://archive.ubuntu.com/ubuntu focal-backports/restricted amd64 c-n-f Metadata [116 B]
+Get:124 http://archive.ubuntu.com/ubuntu focal-backports/universe i386 Packages [13.8 kB]
+Get:125 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 Packages [25.0 kB]
+Get:126 http://archive.ubuntu.com/ubuntu focal-backports/universe Translation-en [16.3 kB]
+Get:127 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 DEP-11 Metadata [30.5 kB]
+Get:128 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 c-n-f Metadata [880 B]
+Get:129 http://archive.ubuntu.com/ubuntu focal-backports/multiverse amd64 DEP-11 Metadata [212 B]
+Get:130 http://archive.ubuntu.com/ubuntu focal-backports/multiverse amd64 c-n-f Metadata [116 B]
+Reading package lists...
+W: GPG error: https://brave-browser-apt-release.s3.brave.com stable InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 0686B78420038257
+E: The repository 'https://brave-browser-apt-release.s3.brave.com stable InRelease' is not signed.
+W: GPG error: http://repository.spotify.com stable InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 6224F9941A8AA6D1
+E: The repository 'http://repository.spotify.com stable InRelease' is not signed.
+W: Target Packages (stable/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list.d/additional-repositories.list:1 and /etc/apt/sources.list.d/docker.list:1
+W: Target Packages (stable/binary-all/Packages) is configured multiple times in /etc/apt/sources.list.d/additional-repositories.list:1 and /etc/apt/sources.list.d/docker.list:1
+W: Target Translations (stable/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list.d/additional-repositories.list:1 and /etc/apt/sources.list.d/docker.list:1
+W: Target DEP-11 (stable/dep11/Components-amd64.yml) is configured multiple times in /etc/apt/sources.list.d/additional-repositories.list:1 and /etc/apt/sources.list.d/docker.list:1
+W: Target DEP-11 (stable/dep11/Components-all.yml) is configured multiple times in /etc/apt/sources.list.d/additional-repositories.list:1 and /etc/apt/sources.list.d/docker.list:1
+W: Target CNF (stable/cnf/Commands-amd64) is configured multiple times in /etc/apt/sources.list.d/additional-repositories.list:1 and /etc/apt/sources.list.d/docker.list:1
+W: Target CNF (stable/cnf/Commands-all) is configured multiple times in /etc/apt/sources.list.d/additional-repositories.list:1 and /etc/apt/sources.list.d/docker.list:1
+W: GPG error: https://cli-assets.heroku.com/apt ./ InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 868C56076B935C6E
+E: The repository 'https://cli-assets.heroku.com/apt ./ InRelease' is not signed.
+W: GPG error: https://packages.stripe.dev/stripe-cli-debian-local stable InRelease: The following signatures were invalid: EXPKEYSIG DEEBD57F917C83E3 Stripe <security@stripe.com>
+E: The repository 'https://packages.stripe.dev/stripe-cli-debian-local stable InRelease' is not signed.
+W: Target Packages (stable/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list.d/additional-repositories.list:1 and /etc/apt/sources.list.d/docker.list:1
+W: Target Packages (stable/binary-all/Packages) is configured multiple times in /etc/apt/sources.list.d/additional-repositories.list:1 and /etc/apt/sources.list.d/docker.list:1
+W: Target Translations (stable/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list.d/additional-repositories.list:1 and /etc/apt/sources.list.d/docker.list:1
+W: Target DEP-11 (stable/dep11/Components-amd64.yml) is configured multiple times in /etc/apt/sources.list.d/additional-repositories.list:1 and /etc/apt/sources.list.d/docker.list:1
+W: Target DEP-11 (stable/dep11/Components-all.yml) is configured multiple times in /etc/apt/sources.list.d/additional-repositories.list:1 and /etc/apt/sources.list.d/docker.list:1
+W: Target CNF (stable/cnf/Commands-amd64) is configured multiple times in /etc/apt/sources.list.d/additional-repositories.list:1 and /etc/apt/sources.list.d/docker.list:1
+W: Target CNF (stable/cnf/Commands-all) is configured multiple times in /etc/apt/sources.list.d/additional-repositories.list:1 and /etc/apt/sources.list.d/docker.list:1
+Error - Return code: 100
+
+Running check 'APT cache'
+rm -rf /var/lib/apt/lists/*
+DEBIAN_PRIORITY=critical apt-get update
+Ign:1 http://packages.linuxmint.com una InRelease
+Get:3 http://security.ubuntu.com/ubuntu focal-security InRelease [128 kB]
+Get:4 https://brave-browser-apt-release.s3.brave.com stable InRelease [7547 B]
+Get:5 http://packages.linuxmint.com una Release [24.1 kB]
+Get:6 http://archive.canonical.com/ubuntu focal InRelease [12.1 kB]
+Get:7 https://cli.github.com/packages stable InRelease [3917 B]
+Get:8 https://repo.nordvpn.com/deb/nordvpn/debian stable InRelease [5305 B]
+Err:4 https://brave-browser-apt-release.s3.brave.com stable InRelease
+  The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 0686B78420038257
+Get:9 https://download.docker.com/linux/ubuntu focal InRelease [57.7 kB]
+Get:10 http://dell.archive.canonical.com focal InRelease [540 kB]
+Get:11 http://archive.ubuntu.com/ubuntu focal InRelease [265 kB]
+Get:12 http://repository.spotify.com stable InRelease [3316 B]
+Get:13 http://packages.linuxmint.com una Release.gpg [833 B]
+Get:14 https://download.sublimetext.com apt/stable/ InRelease [2536 B]
+Get:15 https://dl.google.com/linux/chrome/deb stable InRelease [1825 B]
+Ign:16 http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.4 InRelease
+Get:18 http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.4 Release [3457 B]
+Ign:19 https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/6.0 InRelease
+Get:20 https://cli.github.com/packages stable/main amd64 Packages [344 B]
+Get:21 http://archive.canonical.com/ubuntu focal/partner amd64 Packages [856 B]
+Get:22 http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.4 Release.gpg [801 B]
+Get:23 https://ngrok-agent.s3.amazonaws.com buster InRelease [20.3 kB]
+Get:17 https://cli-assets.heroku.com/apt ./ InRelease [2290 B]
+Get:24 https://packages.stripe.dev/stripe-cli-debian-local stable InRelease [4286 B]
+Get:25 https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/6.0 Release [3094 B]
+Get:26 https://repo.nordvpn.com/deb/nordvpn/debian stable/main i386 Packages [3535 B]
+Get:27 http://archive.canonical.com/ubuntu focal/partner Translation-en [384 B]
+Err:12 http://repository.spotify.com stable InRelease
+  The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 6224F9941A8AA6D1
+Get:29 https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/6.0 Release.gpg [866 B]
+Get:30 https://repo.nordvpn.com/deb/nordvpn/debian stable/main amd64 Packages [3542 B]
+Get:2 https://packages.microsoft.com/repos/code stable InRelease [3590 B]
+Get:31 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages [48.8 kB]
+Get:32 http://packages.linuxmint.com una/main amd64 Packages [16.2 kB]
+Get:33 http://archive.ubuntu.com/ubuntu focal-updates InRelease [128 kB]
+Get:34 http://security.ubuntu.com/ubuntu focal-security/main amd64 Packages [3125 kB]
+Get:35 http://packages.linuxmint.com una/main i386 Packages [15.6 kB]
+Get:36 http://packages.linuxmint.com una/upstream i386 Packages [13.5 kB]
+Get:37 http://packages.linuxmint.com una/upstream amd64 Packages [50.4 kB]
+Get:38 http://packages.linuxmint.com una/import i386 Packages [3273 B]
+Get:39 http://archive.ubuntu.com/ubuntu focal-backports InRelease [128 kB]
+Get:40 http://packages.linuxmint.com una/import amd64 Packages [7783 B]
+Get:41 http://packages.linuxmint.com una/backport amd64 Packages [90.3 kB]
+Get:42 https://dl.google.com/linux/chrome/deb stable/main amd64 Packages [1098 B]
+Get:43 http://packages.linuxmint.com una/backport i386 Packages [27.1 kB]
+Get:44 http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.4/multiverse arm64 Packages [16.4 kB]
+Err:17 https://cli-assets.heroku.com/apt ./ InRelease
+  The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 868C56076B935C6E
+Get:45 http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.4/multiverse amd64 Packages [16.4 kB]
+Get:28 https://packagecloud.io/slacktechnologies/slack/debian jessie InRelease [29.1 kB]
+Err:24 https://packages.stripe.dev/stripe-cli-debian-local stable InRelease
+  The following signatures were invalid: EXPKEYSIG DEEBD57F917C83E3 Stripe <security@stripe.com>
+Get:46 https://ngrok-agent.s3.amazonaws.com buster/main i386 Packages [4990 B]
+Get:47 https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/6.0/multiverse arm64 Packages [66.7 kB]
+Get:48 https://ngrok-agent.s3.amazonaws.com buster/main amd64 Packages [5264 B]
+Get:49 https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/6.0/multiverse amd64 Packages [70.4 kB]
+Get:50 http://archive.ubuntu.com/ubuntu focal/main amd64 Packages [970 kB]
+Get:51 https://download.sublimetext.com apt/stable/ Packages [8584 B]
+Get:52 http://dell.archive.canonical.com focal/somerville amd64 Packages [8678 B]
+Get:53 http://dell.archive.canonical.com focal/somerville i386 Packages [5584 B]
+Get:54 http://dell.archive.canonical.com focal/somerville-meera-tgl amd64 Packages [1057 B]
+Get:55 http://dell.archive.canonical.com focal/somerville-meera-tgl i386 Packages [848 B]
+Get:56 https://packages.microsoft.com/repos/code stable/main amd64 Packages [17.4 kB]
+Get:57 https://packages.microsoft.com/repos/code stable/main armhf Packages [17.6 kB]
+Get:58 https://packages.microsoft.com/repos/code stable/main arm64 Packages [17.5 kB]
+Get:59 http://archive.ubuntu.com/ubuntu focal/main i386 Packages [718 kB]
+Get:60 http://archive.ubuntu.com/ubuntu focal/main Translation-en [506 kB]
+Get:61 http://archive.ubuntu.com/ubuntu focal/main amd64 DEP-11 Metadata [494 kB]
+Get:63 http://archive.ubuntu.com/ubuntu focal/main amd64 c-n-f Metadata [29.5 kB]
+Get:64 http://archive.ubuntu.com/ubuntu focal/restricted i386 Packages [8112 B]
+Get:65 http://archive.ubuntu.com/ubuntu focal/restricted amd64 Packages [22.0 kB]
+Get:66 http://archive.ubuntu.com/ubuntu focal/restricted Translation-en [6212 B]
+Get:67 http://archive.ubuntu.com/ubuntu focal/restricted amd64 c-n-f Metadata [392 B]
+Get:68 http://archive.ubuntu.com/ubuntu focal/universe i386 Packages [4642 kB]
+Get:69 http://security.ubuntu.com/ubuntu focal-security/main i386 Packages [795 kB]
+Get:62 https://packagecloud.io/slacktechnologies/slack/debian jessie/main amd64 Packages [2983 B]
+Get:70 http://archive.ubuntu.com/ubuntu focal/universe amd64 Packages [8628 kB]
+Get:71 http://security.ubuntu.com/ubuntu focal-security/main Translation-en [464 kB]
+Get:72 http://security.ubuntu.com/ubuntu focal-security/main amd64 DEP-11 Metadata [65.3 kB]
+Get:73 http://security.ubuntu.com/ubuntu focal-security/main amd64 c-n-f Metadata [14.1 kB]
+Get:74 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 Packages [3034 kB]
+Get:75 http://archive.ubuntu.com/ubuntu focal/universe Translation-en [5124 kB]
+Get:76 http://archive.ubuntu.com/ubuntu focal/universe amd64 DEP-11 Metadata [3603 kB]
+Get:77 http://archive.ubuntu.com/ubuntu focal/universe amd64 c-n-f Metadata [265 kB]
+Get:78 http://archive.ubuntu.com/ubuntu focal/multiverse i386 Packages [74.7 kB]
+Get:79 http://archive.ubuntu.com/ubuntu focal/multiverse amd64 Packages [144 kB]
+Get:80 http://security.ubuntu.com/ubuntu focal-security/restricted i386 Packages [38.1 kB]
+Get:81 http://archive.ubuntu.com/ubuntu focal/multiverse Translation-en [104 kB]
+Get:82 http://security.ubuntu.com/ubuntu focal-security/restricted Translation-en [425 kB]
+Get:83 http://archive.ubuntu.com/ubuntu focal/multiverse amd64 DEP-11 Metadata [48.4 kB]
+Get:84 http://archive.ubuntu.com/ubuntu focal/multiverse amd64 c-n-f Metadata [9136 B]
+Get:85 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [3495 kB]
+Get:86 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 DEP-11 Metadata [212 B]
+Get:87 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 c-n-f Metadata [544 B]
+Get:88 http://security.ubuntu.com/ubuntu focal-security/universe i386 Packages [674 kB]
+Get:89 http://archive.ubuntu.com/ubuntu focal-updates/main i386 Packages [1016 kB]
+Get:90 http://archive.ubuntu.com/ubuntu focal-updates/main Translation-en [542 kB]
+Get:91 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 DEP-11 Metadata [276 kB]
+Get:92 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 c-n-f Metadata [17.7 kB]
+Get:93 http://archive.ubuntu.com/ubuntu focal-updates/restricted i386 Packages [39.4 kB]
+Get:94 http://archive.ubuntu.com/ubuntu focal-updates/restricted amd64 Packages [3152 kB]
+Get:95 http://security.ubuntu.com/ubuntu focal-security/universe amd64 Packages [999 kB]
+Get:96 http://archive.ubuntu.com/ubuntu focal-updates/restricted Translation-en [442 kB]
+Get:97 http://archive.ubuntu.com/ubuntu focal-updates/restricted amd64 DEP-11 Metadata [212 B]
+Get:98 http://archive.ubuntu.com/ubuntu focal-updates/restricted amd64 c-n-f Metadata [540 B]
+Get:99 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [1218 kB]
+Get:100 http://archive.ubuntu.com/ubuntu focal-updates/universe i386 Packages [801 kB]
+Get:101 http://archive.ubuntu.com/ubuntu focal-updates/universe Translation-en [294 kB]
+Get:102 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 DEP-11 Metadata [444 kB]
+Get:103 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 c-n-f Metadata [27.8 kB]
+Get:104 http://archive.ubuntu.com/ubuntu focal-updates/multiverse i386 Packages [8440 B]
+Get:105 http://archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 Packages [27.1 kB]
+Get:106 http://archive.ubuntu.com/ubuntu focal-updates/multiverse Translation-en [7936 B]
+Get:107 http://archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 DEP-11 Metadata [940 B]
+Get:108 http://archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 c-n-f Metadata [616 B]
+Get:109 http://security.ubuntu.com/ubuntu focal-security/universe Translation-en [212 kB]
+Get:110 http://archive.ubuntu.com/ubuntu focal-backports/main amd64 Packages [45.7 kB]
+Get:111 http://archive.ubuntu.com/ubuntu focal-backports/main i386 Packages [36.1 kB]
+Get:112 http://archive.ubuntu.com/ubuntu focal-backports/main Translation-en [16.3 kB]
+Get:113 http://archive.ubuntu.com/ubuntu focal-backports/main amd64 DEP-11 Metadata [7980 B]
+Get:114 http://archive.ubuntu.com/ubuntu focal-backports/main amd64 c-n-f Metadata [1420 B]
+Get:115 http://archive.ubuntu.com/ubuntu focal-backports/restricted amd64 DEP-11 Metadata [212 B]
+Get:116 http://security.ubuntu.com/ubuntu focal-security/universe amd64 DEP-11 Metadata [127 kB]
+Get:117 http://archive.ubuntu.com/ubuntu focal-backports/restricted amd64 c-n-f Metadata [116 B]
+Get:118 http://archive.ubuntu.com/ubuntu focal-backports/universe i386 Packages [13.8 kB]
+Get:119 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 Packages [25.0 kB]
+Get:120 http://archive.ubuntu.com/ubuntu focal-backports/universe Translation-en [16.3 kB]
+Get:121 http://security.ubuntu.com/ubuntu focal-security/universe amd64 c-n-f Metadata [21.1 kB]
+Get:122 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 Packages [24.8 kB]
+Get:123 http://security.ubuntu.com/ubuntu focal-security/multiverse i386 Packages [7204 B]
+Get:124 http://security.ubuntu.com/ubuntu focal-security/multiverse Translation-en [5968 B]
+Get:125 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 DEP-11 Metadata [940 B]
+Get:126 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 c-n-f Metadata [540 B]
+Get:127 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 DEP-11 Metadata [30.5 kB]
+Get:128 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 c-n-f Metadata [880 B]
+Get:129 http://archive.ubuntu.com/ubuntu focal-backports/multiverse amd64 DEP-11 Metadata [212 B]
+Get:130 http://archive.ubuntu.com/ubuntu focal-backports/multiverse amd64 c-n-f Metadata [116 B]
+Reading package lists...
+W: GPG error: https://brave-browser-apt-release.s3.brave.com stable InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 0686B78420038257
+E: The repository 'https://brave-browser-apt-release.s3.brave.com stable InRelease' is not signed.
+W: GPG error: http://repository.spotify.com stable InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 6224F9941A8AA6D1
+E: The repository 'http://repository.spotify.com stable InRelease' is not signed.
+W: Target Packages (stable/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list.d/additional-repositories.list:1 and /etc/apt/sources.list.d/docker.list:1
+W: Target Packages (stable/binary-all/Packages) is configured multiple times in /etc/apt/sources.list.d/additional-repositories.list:1 and /etc/apt/sources.list.d/docker.list:1
+W: Target Translations (stable/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list.d/additional-repositories.list:1 and /etc/apt/sources.list.d/docker.list:1
+W: Target DEP-11 (stable/dep11/Components-amd64.yml) is configured multiple times in /etc/apt/sources.list.d/additional-repositories.list:1 and /etc/apt/sources.list.d/docker.list:1
+W: Target DEP-11 (stable/dep11/Components-all.yml) is configured multiple times in /etc/apt/sources.list.d/additional-repositories.list:1 and /etc/apt/sources.list.d/docker.list:1
+W: Target CNF (stable/cnf/Commands-amd64) is configured multiple times in /etc/apt/sources.list.d/additional-repositories.list:1 and /etc/apt/sources.list.d/docker.list:1
+W: Target CNF (stable/cnf/Commands-all) is configured multiple times in /etc/apt/sources.list.d/additional-repositories.list:1 and /etc/apt/sources.list.d/docker.list:1
+W: GPG error: https://cli-assets.heroku.com/apt ./ InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 868C56076B935C6E
+E: The repository 'https://cli-assets.heroku.com/apt ./ InRelease' is not signed.
+W: GPG error: https://packages.stripe.dev/stripe-cli-debian-local stable InRelease: The following signatures were invalid: EXPKEYSIG DEEBD57F917C83E3 Stripe <security@stripe.com>
+E: The repository 'https://packages.stripe.dev/stripe-cli-debian-local stable InRelease' is not signed.
+W: Target Packages (stable/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list.d/additional-repositories.list:1 and /etc/apt/sources.list.d/docker.list:1
+W: Target Packages (stable/binary-all/Packages) is configured multiple times in /etc/apt/sources.list.d/additional-repositories.list:1 and /etc/apt/sources.list.d/docker.list:1
+W: Target Translations (stable/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list.d/additional-repositories.list:1 and /etc/apt/sources.list.d/docker.list:1
+W: Target DEP-11 (stable/dep11/Components-amd64.yml) is configured multiple times in /etc/apt/sources.list.d/additional-repositories.list:1 and /etc/apt/sources.list.d/docker.list:1
+W: Target DEP-11 (stable/dep11/Components-all.yml) is configured multiple times in /etc/apt/sources.list.d/additional-repositories.list:1 and /etc/apt/sources.list.d/docker.list:1
+W: Target CNF (stable/cnf/Commands-amd64) is configured multiple times in /etc/apt/sources.list.d/additional-repositories.list:1 and /etc/apt/sources.list.d/docker.list:1
+W: Target CNF (stable/cnf/Commands-all) is configured multiple times in /etc/apt/sources.list.d/additional-repositories.list:1 and /etc/apt/sources.list.d/docker.list:1
+Error - Return code: 100
+
+Running check 'APT cache'
+rm -rf /var/lib/apt/lists/*
+DEBIAN_PRIORITY=critical apt-get update
+Get:1 http://archive.ubuntu.com/ubuntu focal InRelease [265 kB]
+Ign:2 http://packages.linuxmint.com una InRelease
+Get:4 http://packages.linuxmint.com una Release [24.1 kB]
+Ign:5 http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.4 InRelease
+Get:6 http://security.ubuntu.com/ubuntu focal-security InRelease [128 kB]
+Get:7 http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.4 Release [3457 B]
+Get:8 https://repo.nordvpn.com/deb/nordvpn/debian stable InRelease [5305 B]
+Get:9 https://download.sublimetext.com apt/stable/ InRelease [2536 B]
+Get:10 https://dl.google.com/linux/chrome/deb stable InRelease [1825 B]
+Get:11 http://packages.linuxmint.com una Release.gpg [833 B]
+Get:12 http://archive.canonical.com/ubuntu focal InRelease [12.1 kB]
+Ign:13 https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/6.0 InRelease
+Get:14 https://cli.github.com/packages stable InRelease [3917 B]
+Get:15 https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/6.0 Release [3094 B]
+Get:16 http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.4 Release.gpg [801 B]
+Get:17 https://repo.nordvpn.com/deb/nordvpn/debian stable/main i386 Packages [3535 B]
+Get:18 https://ngrok-agent.s3.amazonaws.com buster InRelease [20.3 kB]
+Get:19 http://dell.archive.canonical.com focal InRelease [540 kB]
+Get:20 https://dl.google.com/linux/chrome/deb stable/main amd64 Packages [1098 B]
+Get:22 https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/6.0 Release.gpg [866 B]
+Get:23 http://packages.linuxmint.com una/main amd64 Packages [16.2 kB]
+Get:24 https://brave-browser-apt-release.s3.brave.com stable InRelease [7547 B]
+Get:25 http://repository.spotify.com stable InRelease [3316 B]
+Get:26 http://archive.canonical.com/ubuntu focal/partner amd64 Packages [856 B]
+Get:27 https://download.docker.com/linux/ubuntu focal InRelease [57.7 kB]
+Get:28 https://repo.nordvpn.com/deb/nordvpn/debian stable/main amd64 Packages [3542 B]
+Get:29 http://archive.ubuntu.com/ubuntu focal-updates InRelease [128 kB]
+Get:30 https://cli.github.com/packages stable/main amd64 Packages [344 B]
+Get:31 http://archive.canonical.com/ubuntu focal/partner Translation-en [384 B]
+Get:32 http://packages.linuxmint.com una/main i386 Packages [15.6 kB]
+Get:21 https://cli-assets.heroku.com/apt ./ InRelease [2290 B]
+Get:33 http://packages.linuxmint.com una/upstream amd64 Packages [50.4 kB]
+Get:34 https://packages.stripe.dev/stripe-cli-debian-local stable InRelease [4286 B]
+Get:35 http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.4/multiverse amd64 Packages [16.4 kB]
+Get:3 https://packages.microsoft.com/repos/code stable InRelease [3590 B]
+Get:36 http://packages.linuxmint.com una/upstream i386 Packages [13.5 kB]
+Get:37 http://packages.linuxmint.com una/import i386 Packages [3273 B]
+Get:38 http://packages.linuxmint.com una/import amd64 Packages [7783 B]
+Get:39 http://packages.linuxmint.com una/backport amd64 Packages [90.3 kB]
+Get:40 https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/6.0/multiverse arm64 Packages [66.7 kB]
+Err:24 https://brave-browser-apt-release.s3.brave.com stable InRelease
+  The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 0686B78420038257
+Get:41 http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.4/multiverse arm64 Packages [16.4 kB]
+Get:43 https://ngrok-agent.s3.amazonaws.com buster/main amd64 Packages [5264 B]
+Get:44 http://archive.ubuntu.com/ubuntu focal-backports InRelease [128 kB]
+Get:45 http://packages.linuxmint.com una/backport i386 Packages [27.1 kB]
+Err:25 http://repository.spotify.com stable InRelease
+  The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 6224F9941A8AA6D1
+Get:46 https://ngrok-agent.s3.amazonaws.com buster/main i386 Packages [4990 B]
+Get:47 https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/6.0/multiverse amd64 Packages [70.4 kB]
+Get:48 http://archive.ubuntu.com/ubuntu focal/main amd64 Packages [970 kB]
+Get:49 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages [48.8 kB]
+Err:21 https://cli-assets.heroku.com/apt ./ InRelease
+  The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 868C56076B935C6E
+Get:50 https://download.sublimetext.com apt/stable/ Packages [8584 B]
+Err:34 https://packages.stripe.dev/stripe-cli-debian-local stable InRelease
+  The following signatures were invalid: EXPKEYSIG DEEBD57F917C83E3 Stripe <security@stripe.com>
+Get:51 http://security.ubuntu.com/ubuntu focal-security/main i386 Packages [795 kB]
+Get:42 https://packagecloud.io/slacktechnologies/slack/debian jessie InRelease [29.1 kB]
+Get:52 http://archive.ubuntu.com/ubuntu focal/main i386 Packages [718 kB]
+Get:53 http://security.ubuntu.com/ubuntu focal-security/main amd64 Packages [3125 kB]
+Get:54 https://packages.microsoft.com/repos/code stable/main amd64 Packages [17.4 kB]
+Get:56 https://packages.microsoft.com/repos/code stable/main armhf Packages [17.6 kB]
+Get:57 https://packages.microsoft.com/repos/code stable/main arm64 Packages [17.5 kB]
+Get:58 http://security.ubuntu.com/ubuntu focal-security/main Translation-en [464 kB]
+Get:59 http://archive.ubuntu.com/ubuntu focal/main Translation-en [506 kB]
+Get:60 http://security.ubuntu.com/ubuntu focal-security/main amd64 DEP-11 Metadata [65.3 kB]
+Get:61 http://security.ubuntu.com/ubuntu focal-security/main amd64 c-n-f Metadata [14.1 kB]
+Get:62 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 Packages [3034 kB]
+Get:63 http://archive.ubuntu.com/ubuntu focal/main amd64 DEP-11 Metadata [494 kB]
+Get:55 https://packagecloud.io/slacktechnologies/slack/debian jessie/main amd64 Packages [2983 B]
+Get:64 http://security.ubuntu.com/ubuntu focal-security/restricted i386 Packages [38.1 kB]
+Get:65 http://security.ubuntu.com/ubuntu focal-security/restricted Translation-en [425 kB]
+Get:66 http://dell.archive.canonical.com focal/somerville i386 Packages [5584 B]
+Get:67 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 DEP-11 Metadata [212 B]
+Get:68 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 c-n-f Metadata [544 B]
+Get:69 http://security.ubuntu.com/ubuntu focal-security/universe i386 Packages [674 kB]
+Get:70 http://archive.ubuntu.com/ubuntu focal/main amd64 c-n-f Metadata [29.5 kB]
+Get:71 http://archive.ubuntu.com/ubuntu focal/restricted amd64 Packages [22.0 kB]
+Get:72 http://archive.ubuntu.com/ubuntu focal/restricted i386 Packages [8112 B]
+Get:73 http://archive.ubuntu.com/ubuntu focal/restricted Translation-en [6212 B]
+Get:74 http://archive.ubuntu.com/ubuntu focal/restricted amd64 c-n-f Metadata [392 B]
+Get:75 http://archive.ubuntu.com/ubuntu focal/universe i386 Packages [4642 kB]
+Get:76 http://dell.archive.canonical.com focal/somerville amd64 Packages [8678 B]
+Get:77 http://dell.archive.canonical.com focal/somerville-meera-tgl i386 Packages [848 B]
+Get:78 http://dell.archive.canonical.com focal/somerville-meera-tgl amd64 Packages [1057 B]
+Get:79 http://security.ubuntu.com/ubuntu focal-security/universe amd64 Packages [999 kB]
+Get:80 http://security.ubuntu.com/ubuntu focal-security/universe Translation-en [212 kB]
+Get:81 http://security.ubuntu.com/ubuntu focal-security/universe amd64 DEP-11 Metadata [127 kB]
+Get:82 http://security.ubuntu.com/ubuntu focal-security/universe amd64 c-n-f Metadata [21.1 kB]
+Get:83 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 Packages [24.8 kB]
+Get:84 http://security.ubuntu.com/ubuntu focal-security/multiverse i386 Packages [7204 B]
+Get:85 http://security.ubuntu.com/ubuntu focal-security/multiverse Translation-en [5968 B]
+Get:86 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 DEP-11 Metadata [940 B]
+Get:87 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 c-n-f Metadata [540 B]
+Get:88 http://archive.ubuntu.com/ubuntu focal/universe amd64 Packages [8628 kB]
+Get:89 http://archive.ubuntu.com/ubuntu focal/universe Translation-en [5124 kB]
+Get:90 http://archive.ubuntu.com/ubuntu focal/universe amd64 DEP-11 Metadata [3603 kB]
+Get:91 http://archive.ubuntu.com/ubuntu focal/universe amd64 c-n-f Metadata [265 kB]
+Get:92 http://archive.ubuntu.com/ubuntu focal/multiverse i386 Packages [74.7 kB]
+Get:93 http://archive.ubuntu.com/ubuntu focal/multiverse amd64 Packages [144 kB]
+Get:94 http://archive.ubuntu.com/ubuntu focal/multiverse Translation-en [104 kB]
+Get:95 http://archive.ubuntu.com/ubuntu focal/multiverse amd64 DEP-11 Metadata [48.4 kB]
+Get:96 http://archive.ubuntu.com/ubuntu focal/multiverse amd64 c-n-f Metadata [9136 B]
+Get:97 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [3495 kB]
+Get:98 http://archive.ubuntu.com/ubuntu focal-updates/main i386 Packages [1016 kB]
+Get:99 http://archive.ubuntu.com/ubuntu focal-updates/main Translation-en [542 kB]
+Get:100 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 DEP-11 Metadata [276 kB]
+Get:101 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 c-n-f Metadata [17.7 kB]
+Get:102 http://archive.ubuntu.com/ubuntu focal-updates/restricted i386 Packages [39.4 kB]
+Get:103 http://archive.ubuntu.com/ubuntu focal-updates/restricted amd64 Packages [3152 kB]
+Get:104 http://archive.ubuntu.com/ubuntu focal-updates/restricted Translation-en [442 kB]
+Get:105 http://archive.ubuntu.com/ubuntu focal-updates/restricted amd64 DEP-11 Metadata [212 B]
+Get:106 http://archive.ubuntu.com/ubuntu focal-updates/restricted amd64 c-n-f Metadata [540 B]
+Get:107 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [1218 kB]
+Get:108 http://archive.ubuntu.com/ubuntu focal-updates/universe i386 Packages [801 kB]
+Get:109 http://archive.ubuntu.com/ubuntu focal-updates/universe Translation-en [294 kB]
+Get:110 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 DEP-11 Metadata [444 kB]
+Get:111 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 c-n-f Metadata [27.8 kB]
+Get:112 http://archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 Packages [27.1 kB]
+Get:113 http://archive.ubuntu.com/ubuntu focal-updates/multiverse i386 Packages [8440 B]
+Get:114 http://archive.ubuntu.com/ubuntu focal-updates/multiverse Translation-en [7936 B]
+Get:115 http://archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 DEP-11 Metadata [940 B]
+Get:116 http://archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 c-n-f Metadata [616 B]
+Get:117 http://archive.ubuntu.com/ubuntu focal-backports/main i386 Packages [36.1 kB]
+Get:118 http://archive.ubuntu.com/ubuntu focal-backports/main amd64 Packages [45.7 kB]
+Get:119 http://archive.ubuntu.com/ubuntu focal-backports/main Translation-en [16.3 kB]
+Get:120 http://archive.ubuntu.com/ubuntu focal-backports/main amd64 DEP-11 Metadata [7980 B]
+Get:121 http://archive.ubuntu.com/ubuntu focal-backports/main amd64 c-n-f Metadata [1420 B]
+Get:122 http://archive.ubuntu.com/ubuntu focal-backports/restricted amd64 DEP-11 Metadata [212 B]
+Get:123 http://archive.ubuntu.com/ubuntu focal-backports/restricted amd64 c-n-f Metadata [116 B]
+Get:124 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 Packages [25.0 kB]
+Get:125 http://archive.ubuntu.com/ubuntu focal-backports/universe i386 Packages [13.8 kB]
+Get:126 http://archive.ubuntu.com/ubuntu focal-backports/universe Translation-en [16.3 kB]
+Get:127 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 DEP-11 Metadata [30.5 kB]
+Get:128 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 c-n-f Metadata [880 B]
+Get:129 http://archive.ubuntu.com/ubuntu focal-backports/multiverse amd64 DEP-11 Metadata [212 B]
+Get:130 http://archive.ubuntu.com/ubuntu focal-backports/multiverse amd64 c-n-f Metadata [116 B]
+Reading package lists...
+W: GPG error: https://brave-browser-apt-release.s3.brave.com stable InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 0686B78420038257
+E: The repository 'https://brave-browser-apt-release.s3.brave.com stable InRelease' is not signed.
+W: GPG error: http://repository.spotify.com stable InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 6224F9941A8AA6D1
+E: The repository 'http://repository.spotify.com stable InRelease' is not signed.
+W: Target Packages (stable/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list.d/additional-repositories.list:1 and /etc/apt/sources.list.d/docker.list:1
+W: Target Packages (stable/binary-all/Packages) is configured multiple times in /etc/apt/sources.list.d/additional-repositories.list:1 and /etc/apt/sources.list.d/docker.list:1
+W: Target Translations (stable/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list.d/additional-repositories.list:1 and /etc/apt/sources.list.d/docker.list:1
+W: Target DEP-11 (stable/dep11/Components-amd64.yml) is configured multiple times in /etc/apt/sources.list.d/additional-repositories.list:1 and /etc/apt/sources.list.d/docker.list:1
+W: Target DEP-11 (stable/dep11/Components-all.yml) is configured multiple times in /etc/apt/sources.list.d/additional-repositories.list:1 and /etc/apt/sources.list.d/docker.list:1
+W: Target CNF (stable/cnf/Commands-amd64) is configured multiple times in /etc/apt/sources.list.d/additional-repositories.list:1 and /etc/apt/sources.list.d/docker.list:1
+W: Target CNF (stable/cnf/Commands-all) is configured multiple times in /etc/apt/sources.list.d/additional-repositories.list:1 and /etc/apt/sources.list.d/docker.list:1
+W: GPG error: https://cli-assets.heroku.com/apt ./ InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 868C56076B935C6E
+E: The repository 'https://cli-assets.heroku.com/apt ./ InRelease' is not signed.
+W: GPG error: https://packages.stripe.dev/stripe-cli-debian-local stable InRelease: The following signatures were invalid: EXPKEYSIG DEEBD57F917C83E3 Stripe <security@stripe.com>
+E: The repository 'https://packages.stripe.dev/stripe-cli-debian-local stable InRelease' is not signed.
+W: Target Packages (stable/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list.d/additional-repositories.list:1 and /etc/apt/sources.list.d/docker.list:1
+W: Target Packages (stable/binary-all/Packages) is configured multiple times in /etc/apt/sources.list.d/additional-repositories.list:1 and /etc/apt/sources.list.d/docker.list:1
+W: Target Translations (stable/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list.d/additional-repositories.list:1 and /etc/apt/sources.list.d/docker.list:1
+W: Target DEP-11 (stable/dep11/Components-amd64.yml) is configured multiple times in /etc/apt/sources.list.d/additional-repositories.list:1 and /etc/apt/sources.list.d/docker.list:1
+W: Target DEP-11 (stable/dep11/Components-all.yml) is configured multiple times in /etc/apt/sources.list.d/additional-repositories.list:1 and /etc/apt/sources.list.d/docker.list:1
+W: Target CNF (stable/cnf/Commands-amd64) is configured multiple times in /etc/apt/sources.list.d/additional-repositories.list:1 and /etc/apt/sources.list.d/docker.list:1
+W: Target CNF (stable/cnf/Commands-all) is configured multiple times in /etc/apt/sources.list.d/additional-repositories.list:1 and /etc/apt/sources.list.d/docker.list:1
+Error - Return code: 100
+mintupgrade-inhibit-power: no process found

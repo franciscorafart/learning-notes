@@ -1,0 +1,387 @@
+
+Running check 'Phase 1: Preparation'
+=================
+APT Repositories:
+=================
+Repos:     No active apt repos in: /etc/apt/sources.list 
+           Active apt repos in: /etc/apt/sources.list.d/additional-repositories.list 
+           1: deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable
+           Active apt repos in: /etc/apt/sources.list.d/docker.list 
+           1: deb [arch=amd64 signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu focal stable
+           Active apt repos in: /etc/apt/sources.list.d/github-cli.list 
+           1: deb [arch=amd64 signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main
+           Active apt repos in: /etc/apt/sources.list.d/google-chrome.list 
+           1: deb [arch=amd64] https://dl.google.com/linux/chrome/deb/ stable main
+           Active apt repos in: /etc/apt/sources.list.d/mongodb-org-3.4.list 
+           1: deb [ arch=amd64,arm64 ] http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.4 multiverse
+           Active apt repos in: /etc/apt/sources.list.d/mongodb-org-6.0.list 
+           1: deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/6.0 multiverse
+           Active apt repos in: /etc/apt/sources.list.d/ngrok.list 
+           1: deb https://ngrok-agent.s3.amazonaws.com buster main
+           Active apt repos in: /etc/apt/sources.list.d/nordvpn.list 
+           1: deb https://repo.nordvpn.com/deb/nordvpn/debian stable main
+           Active apt repos in: /etc/apt/sources.list.d/oem-somerville-meera-tgl-meta.list 
+           1: deb http://dell.archive.canonical.com/ focal somerville
+           2: deb http://dell.archive.canonical.com/ focal somerville-meera-tgl
+           Active apt repos in: /etc/apt/sources.list.d/official-package-repositories.list 
+           1: deb http://packages.linuxmint.com una main upstream import backport #id:linuxmint_main
+           2: deb http://archive.ubuntu.com/ubuntu focal main restricted universe multiverse
+           3: deb http://archive.ubuntu.com/ubuntu focal-updates main restricted universe multiverse
+           4: deb http://archive.ubuntu.com/ubuntu focal-backports main restricted universe multiverse
+           5: deb http://security.ubuntu.com/ubuntu/ focal-security main restricted universe multiverse
+           6: deb http://archive.canonical.com/ubuntu/ focal partner
+           Active apt repos in: /etc/apt/sources.list.d/slack.list 
+           1: deb https://packagecloud.io/slacktechnologies/slack/debian/ jessie main
+           Active apt repos in: /etc/apt/sources.list.d/sublime-text.list 
+           1: deb https://download.sublimetext.com/ apt/stable/
+           Active apt repos in: /etc/apt/sources.list.d/vscode.list 
+           1: deb [arch=amd64,arm64,armhf] http://packages.microsoft.com/repos/code stable main
+=================
+
+Running check 'Linux Mint version'
+Check succeeded:  Linux Mint version
+
+Running check 'Power source'
+Check succeeded:  Power source
+
+Running check 'APT cache'
+rm -rf /var/lib/apt/lists/*
+DEBIAN_PRIORITY=critical apt-get update
+Ign:1 http://packages.linuxmint.com una InRelease
+Ign:2 http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.4 InRelease
+Get:3 https://cli.github.com/packages stable InRelease [3917 B]
+Get:5 https://download.docker.com/linux/ubuntu focal InRelease [57.7 kB]
+Get:6 https://dl.google.com/linux/chrome/deb stable InRelease [1825 B]
+Get:7 http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.4 Release [3457 B]
+Ign:8 https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/6.0 InRelease
+Get:9 http://packages.linuxmint.com una Release [24.1 kB]
+Get:10 http://archive.ubuntu.com/ubuntu focal InRelease [265 kB]
+Get:11 https://download.sublimetext.com apt/stable/ InRelease [2536 B]
+Get:12 http://archive.canonical.com/ubuntu focal InRelease [12.1 kB]
+Get:13 http://security.ubuntu.com/ubuntu focal-security InRelease [128 kB]
+Get:14 http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.4 Release.gpg [801 B]
+Get:15 https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/6.0 Release [3094 B]
+Get:16 https://repo.nordvpn.com/deb/nordvpn/debian stable InRelease [5305 B]
+Get:17 http://dell.archive.canonical.com focal InRelease [540 kB]
+Get:18 https://cli.github.com/packages stable/main amd64 Packages [344 B]
+Get:19 https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/6.0 Release.gpg [866 B]
+Get:20 http://packages.linuxmint.com una Release.gpg [833 B]
+Get:21 https://dl.google.com/linux/chrome/deb stable/main amd64 Packages [1098 B]
+Get:22 https://ngrok-agent.s3.amazonaws.com buster InRelease [20.3 kB]
+Get:23 https://download.sublimetext.com apt/stable/ Packages [8584 B]
+Get:4 https://packages.microsoft.com/repos/code stable InRelease [3590 B]
+Get:25 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages [48.8 kB]
+Get:26 http://archive.canonical.com/ubuntu focal/partner amd64 Packages [856 B]
+Get:27 http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.4/multiverse amd64 Packages [16.4 kB]
+Get:28 https://repo.nordvpn.com/deb/nordvpn/debian stable/main amd64 Packages [3542 B]
+Get:29 http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.4/multiverse arm64 Packages [16.4 kB]
+Get:30 https://repo.nordvpn.com/deb/nordvpn/debian stable/main i386 Packages [3535 B]
+Get:31 https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/6.0/multiverse arm64 Packages [66.7 kB]
+Get:32 http://archive.ubuntu.com/ubuntu focal-updates InRelease [128 kB]
+Get:33 http://archive.canonical.com/ubuntu focal/partner Translation-en [384 B]
+Get:34 http://packages.linuxmint.com una/main amd64 Packages [16.2 kB]
+Get:35 https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/6.0/multiverse amd64 Packages [70.4 kB]
+Get:36 http://archive.ubuntu.com/ubuntu focal-backports InRelease [128 kB]
+Get:37 http://packages.linuxmint.com una/main i386 Packages [15.6 kB]
+Get:38 http://packages.linuxmint.com una/upstream amd64 Packages [50.4 kB]
+Get:39 https://ngrok-agent.s3.amazonaws.com buster/main amd64 Packages [5264 B]
+Get:40 http://packages.linuxmint.com una/upstream i386 Packages [13.5 kB]
+Get:24 https://packagecloud.io/slacktechnologies/slack/debian jessie InRelease [29.1 kB]
+Get:41 https://packages.microsoft.com/repos/code stable/main arm64 Packages [17.5 kB]
+Get:42 http://packages.linuxmint.com una/import i386 Packages [3273 B]
+Get:43 http://packages.linuxmint.com una/import amd64 Packages [7783 B]
+Get:44 http://packages.linuxmint.com una/backport amd64 Packages [90.3 kB]
+Get:45 https://ngrok-agent.s3.amazonaws.com buster/main i386 Packages [4990 B]
+Get:46 http://security.ubuntu.com/ubuntu focal-security/main i386 Packages [795 kB]
+Get:47 https://packages.microsoft.com/repos/code stable/main amd64 Packages [17.4 kB]
+Get:48 http://packages.linuxmint.com una/backport i386 Packages [27.1 kB]
+Get:49 https://packages.microsoft.com/repos/code stable/main armhf Packages [17.6 kB]
+Get:50 http://archive.ubuntu.com/ubuntu focal/main amd64 Packages [970 kB]
+Get:51 http://dell.archive.canonical.com focal/somerville amd64 Packages [8678 B]
+Get:52 http://dell.archive.canonical.com focal/somerville i386 Packages [5584 B]
+Get:53 http://dell.archive.canonical.com focal/somerville-meera-tgl i386 Packages [848 B]
+Get:54 http://dell.archive.canonical.com focal/somerville-meera-tgl amd64 Packages [1057 B]
+Get:55 http://security.ubuntu.com/ubuntu focal-security/main amd64 Packages [3125 kB]
+Get:56 http://archive.ubuntu.com/ubuntu focal/main i386 Packages [718 kB]
+Get:57 http://archive.ubuntu.com/ubuntu focal/main Translation-en [506 kB]
+Get:58 http://archive.ubuntu.com/ubuntu focal/main amd64 DEP-11 Metadata [494 kB]
+Get:59 http://archive.ubuntu.com/ubuntu focal/main amd64 c-n-f Metadata [29.5 kB]
+Get:60 http://archive.ubuntu.com/ubuntu focal/restricted amd64 Packages [22.0 kB]
+Get:61 http://archive.ubuntu.com/ubuntu focal/restricted i386 Packages [8112 B]
+Get:62 http://archive.ubuntu.com/ubuntu focal/restricted Translation-en [6212 B]
+Get:63 http://archive.ubuntu.com/ubuntu focal/restricted amd64 c-n-f Metadata [392 B]
+Get:64 http://archive.ubuntu.com/ubuntu focal/universe amd64 Packages [8628 kB]
+Get:65 https://packagecloud.io/slacktechnologies/slack/debian jessie/main amd64 Packages [2983 B]
+Get:66 http://security.ubuntu.com/ubuntu focal-security/main Translation-en [464 kB]
+Get:67 http://security.ubuntu.com/ubuntu focal-security/main amd64 DEP-11 Metadata [65.3 kB]
+Get:68 http://security.ubuntu.com/ubuntu focal-security/main amd64 c-n-f Metadata [14.1 kB]
+Get:69 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 Packages [3034 kB]
+Get:70 http://security.ubuntu.com/ubuntu focal-security/restricted i386 Packages [38.1 kB]
+Get:71 http://security.ubuntu.com/ubuntu focal-security/restricted Translation-en [425 kB]
+Get:72 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 DEP-11 Metadata [212 B]
+Get:73 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 c-n-f Metadata [544 B]
+Get:74 http://security.ubuntu.com/ubuntu focal-security/universe amd64 Packages [999 kB]
+Get:75 http://security.ubuntu.com/ubuntu focal-security/universe i386 Packages [674 kB]
+Get:76 http://security.ubuntu.com/ubuntu focal-security/universe Translation-en [212 kB]
+Get:77 http://archive.ubuntu.com/ubuntu focal/universe i386 Packages [4642 kB]
+Get:78 http://security.ubuntu.com/ubuntu focal-security/universe amd64 DEP-11 Metadata [127 kB]
+Get:79 http://security.ubuntu.com/ubuntu focal-security/universe amd64 c-n-f Metadata [21.1 kB]
+Get:80 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 Packages [24.8 kB]
+Get:81 http://security.ubuntu.com/ubuntu focal-security/multiverse i386 Packages [7204 B]
+Get:82 http://security.ubuntu.com/ubuntu focal-security/multiverse Translation-en [5968 B]
+Get:83 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 DEP-11 Metadata [940 B]
+Get:84 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 c-n-f Metadata [540 B]
+Get:85 http://archive.ubuntu.com/ubuntu focal/universe Translation-en [5124 kB]
+Get:86 http://archive.ubuntu.com/ubuntu focal/universe amd64 DEP-11 Metadata [3603 kB]
+Get:87 http://archive.ubuntu.com/ubuntu focal/universe amd64 c-n-f Metadata [265 kB]
+Get:88 http://archive.ubuntu.com/ubuntu focal/multiverse amd64 Packages [144 kB]
+Get:89 http://archive.ubuntu.com/ubuntu focal/multiverse i386 Packages [74.7 kB]
+Get:90 http://archive.ubuntu.com/ubuntu focal/multiverse Translation-en [104 kB]
+Get:91 http://archive.ubuntu.com/ubuntu focal/multiverse amd64 DEP-11 Metadata [48.4 kB]
+Get:92 http://archive.ubuntu.com/ubuntu focal/multiverse amd64 c-n-f Metadata [9136 B]
+Get:93 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [3495 kB]
+Get:94 http://archive.ubuntu.com/ubuntu focal-updates/main i386 Packages [1016 kB]
+Get:95 http://archive.ubuntu.com/ubuntu focal-updates/main Translation-en [542 kB]
+Get:96 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 DEP-11 Metadata [276 kB]
+Get:97 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 c-n-f Metadata [17.7 kB]
+Get:98 http://archive.ubuntu.com/ubuntu focal-updates/restricted i386 Packages [39.4 kB]
+Get:99 http://archive.ubuntu.com/ubuntu focal-updates/restricted amd64 Packages [3152 kB]
+Get:100 http://archive.ubuntu.com/ubuntu focal-updates/restricted Translation-en [442 kB]
+Get:101 http://archive.ubuntu.com/ubuntu focal-updates/restricted amd64 DEP-11 Metadata [212 B]
+Get:102 http://archive.ubuntu.com/ubuntu focal-updates/restricted amd64 c-n-f Metadata [540 B]
+Get:103 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [1218 kB]
+Get:104 http://archive.ubuntu.com/ubuntu focal-updates/universe i386 Packages [801 kB]
+Get:105 http://archive.ubuntu.com/ubuntu focal-updates/universe Translation-en [294 kB]
+Get:106 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 DEP-11 Metadata [444 kB]
+Get:107 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 c-n-f Metadata [27.8 kB]
+Get:108 http://archive.ubuntu.com/ubuntu focal-updates/multiverse i386 Packages [8440 B]
+Get:109 http://archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 Packages [27.1 kB]
+Get:110 http://archive.ubuntu.com/ubuntu focal-updates/multiverse Translation-en [7936 B]
+Get:111 http://archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 DEP-11 Metadata [940 B]
+Get:112 http://archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 c-n-f Metadata [616 B]
+Get:113 http://archive.ubuntu.com/ubuntu focal-backports/main amd64 Packages [45.7 kB]
+Get:114 http://archive.ubuntu.com/ubuntu focal-backports/main i386 Packages [36.1 kB]
+Get:115 http://archive.ubuntu.com/ubuntu focal-backports/main Translation-en [16.3 kB]
+Get:116 http://archive.ubuntu.com/ubuntu focal-backports/main amd64 DEP-11 Metadata [7980 B]
+Get:117 http://archive.ubuntu.com/ubuntu focal-backports/main amd64 c-n-f Metadata [1420 B]
+Get:118 http://archive.ubuntu.com/ubuntu focal-backports/restricted amd64 DEP-11 Metadata [212 B]
+Get:119 http://archive.ubuntu.com/ubuntu focal-backports/restricted amd64 c-n-f Metadata [116 B]
+Get:120 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 Packages [25.0 kB]
+Get:121 http://archive.ubuntu.com/ubuntu focal-backports/universe i386 Packages [13.8 kB]
+Get:122 http://archive.ubuntu.com/ubuntu focal-backports/universe Translation-en [16.3 kB]
+Get:123 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 DEP-11 Metadata [30.5 kB]
+Get:124 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 c-n-f Metadata [880 B]
+Get:125 http://archive.ubuntu.com/ubuntu focal-backports/multiverse amd64 DEP-11 Metadata [212 B]
+Get:126 http://archive.ubuntu.com/ubuntu focal-backports/multiverse amd64 c-n-f Metadata [116 B]
+Fetched 49.3 MB in 13s (3817 kB/s)
+Reading package lists...
+W: Target Packages (stable/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list.d/additional-repositories.list:1 and /etc/apt/sources.list.d/docker.list:1
+W: Target Packages (stable/binary-all/Packages) is configured multiple times in /etc/apt/sources.list.d/additional-repositories.list:1 and /etc/apt/sources.list.d/docker.list:1
+W: Target Translations (stable/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list.d/additional-repositories.list:1 and /etc/apt/sources.list.d/docker.list:1
+W: Target DEP-11 (stable/dep11/Components-amd64.yml) is configured multiple times in /etc/apt/sources.list.d/additional-repositories.list:1 and /etc/apt/sources.list.d/docker.list:1
+W: Target DEP-11 (stable/dep11/Components-all.yml) is configured multiple times in /etc/apt/sources.list.d/additional-repositories.list:1 and /etc/apt/sources.list.d/docker.list:1
+W: Target CNF (stable/cnf/Commands-amd64) is configured multiple times in /etc/apt/sources.list.d/additional-repositories.list:1 and /etc/apt/sources.list.d/docker.list:1
+W: Target CNF (stable/cnf/Commands-all) is configured multiple times in /etc/apt/sources.list.d/additional-repositories.list:1 and /etc/apt/sources.list.d/docker.list:1
+W: Target Packages (stable/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list.d/additional-repositories.list:1 and /etc/apt/sources.list.d/docker.list:1
+W: Target Packages (stable/binary-all/Packages) is configured multiple times in /etc/apt/sources.list.d/additional-repositories.list:1 and /etc/apt/sources.list.d/docker.list:1
+W: Target Translations (stable/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list.d/additional-repositories.list:1 and /etc/apt/sources.list.d/docker.list:1
+W: Target DEP-11 (stable/dep11/Components-amd64.yml) is configured multiple times in /etc/apt/sources.list.d/additional-repositories.list:1 and /etc/apt/sources.list.d/docker.list:1
+W: Target DEP-11 (stable/dep11/Components-all.yml) is configured multiple times in /etc/apt/sources.list.d/additional-repositories.list:1 and /etc/apt/sources.list.d/docker.list:1
+W: Target CNF (stable/cnf/Commands-amd64) is configured multiple times in /etc/apt/sources.list.d/additional-repositories.list:1 and /etc/apt/sources.list.d/docker.list:1
+W: Target CNF (stable/cnf/Commands-all) is configured multiple times in /etc/apt/sources.list.d/additional-repositories.list:1 and /etc/apt/sources.list.d/docker.list:1
+Check succeeded:  APT cache
+
+Running check 'System snapshots'
+
+Fixing check 'System snapshots'
+Check succeeded:  System snapshots
+
+Running check 'Held packages'
+Check succeeded:  Held packages
+
+Running check 'Package repositories'
+
+Fixing check 'Package repositories'
+Mint repository last modified on 2024-08-08 11:51:29
+Check succeeded:  Package repositories
+
+Running check 'Foreign packages'
+Check succeeded:  Foreign packages
+
+Running check 'Orphan packages'
+
+Running check 'Phase 2: Simulation and download'
+=================
+APT Repositories:
+=================
+Repos:     No active apt repos in: /etc/apt/sources.list 
+           Active apt repos in: /etc/apt/sources.list.d/additional-repositories.list 
+           1: deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable
+           Active apt repos in: /etc/apt/sources.list.d/docker.list 
+           1: deb [arch=amd64 signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu focal stable
+           Active apt repos in: /etc/apt/sources.list.d/github-cli.list 
+           1: deb [arch=amd64 signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main
+           Active apt repos in: /etc/apt/sources.list.d/google-chrome.list 
+           1: deb [arch=amd64] https://dl.google.com/linux/chrome/deb/ stable main
+           No active apt repos in: /etc/apt/sources.list.d/mongodb-org-3.4.list 
+           Active apt repos in: /etc/apt/sources.list.d/mongodb-org-6.0.list 
+           1: deb [arch=amd64,arm64] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/6.0 multiverse
+           No active apt repos in: /etc/apt/sources.list.d/ngrok.list 
+           Active apt repos in: /etc/apt/sources.list.d/nordvpn.list 
+           1: deb https://repo.nordvpn.com/deb/nordvpn/debian stable main
+           Active apt repos in: /etc/apt/sources.list.d/oem-somerville-meera-tgl-meta.list 
+           1: deb http://dell.archive.canonical.com/ focal somerville
+           2: deb http://dell.archive.canonical.com/ focal somerville-meera-tgl
+           Active apt repos in: /etc/apt/sources.list.d/official-package-repositories.list 
+           1: deb http://packages.linuxmint.com una main upstream import backport #id:linuxmint_main
+           2: deb http://archive.ubuntu.com/ubuntu focal main restricted universe multiverse
+           3: deb http://archive.ubuntu.com/ubuntu focal-updates main restricted universe multiverse
+           4: deb http://archive.ubuntu.com/ubuntu focal-backports main restricted universe multiverse
+           5: deb http://security.ubuntu.com/ubuntu/ focal-security main restricted universe multiverse
+           6: deb http://archive.canonical.com/ubuntu/ focal partner
+           No active apt repos in: /etc/apt/sources.list.d/slack.list 
+           No active apt repos in: /etc/apt/sources.list.d/sublime-text.list 
+           Active apt repos in: /etc/apt/sources.list.d/vscode.list 
+           1: deb [arch=amd64,arm64,armhf] http://packages.microsoft.com/repos/code stable main
+=================
+
+Running check 'Package repositories'
+Switching http://packages.linuxmint.com to vanessa
+Switching http://archive.ubuntu.com/ubuntu to jammy
+Switching http://archive.ubuntu.com/ubuntu to jammy-updates
+Switching http://archive.ubuntu.com/ubuntu to jammy-backports
+Switching http://security.ubuntu.com/ubuntu/ to jammy-security
+Switching http://archive.canonical.com/ubuntu/ to jammy
+Disabling partner repo (discontinued).
+Switching https://download.docker.com/linux/ubuntu to jammy
+Switching https://download.docker.com/linux/ubuntu to jammy
+Switching http://dell.archive.canonical.com/ to jammy
+Switching http://dell.archive.canonical.com/ to jammy
+Switching https://repo.mongodb.org/apt/ubuntu to jammy/mongodb-org/6.0
+Check succeeded:  Package repositories
+
+Running check 'APT cache'
+rm -rf /var/lib/apt/lists/*
+DEBIAN_PRIORITY=critical apt-get update
+Ign:1 http://packages.linuxmint.com vanessa InRelease
+Get:2 https://cli.github.com/packages stable InRelease [3917 B]
+Get:4 http://packages.linuxmint.com vanessa Release [24.1 kB]
+Get:5 https://cli.github.com/packages stable/main amd64 Packages [344 B]
+Get:6 https://download.docker.com/linux/ubuntu jammy InRelease [48.8 kB]
+Get:7 https://dl.google.com/linux/chrome/deb stable InRelease [1825 B]
+Get:8 http://archive.ubuntu.com/ubuntu jammy InRelease [270 kB]
+Get:9 http://dell.archive.canonical.com jammy InRelease [323 kB]
+Get:10 http://packages.linuxmint.com vanessa Release.gpg [833 B]
+Get:11 https://repo.nordvpn.com/deb/nordvpn/debian stable InRelease [5305 B]
+Get:12 https://download.docker.com/linux/ubuntu focal InRelease [57.7 kB]
+Get:13 https://dl.google.com/linux/chrome/deb stable/main amd64 Packages [1098 B]
+Get:14 http://security.ubuntu.com/ubuntu jammy-security InRelease [129 kB]
+Get:15 http://packages.linuxmint.com vanessa/main amd64 Packages [17.6 kB]
+Get:16 http://packages.linuxmint.com vanessa/main i386 Packages [17.0 kB]
+Get:17 https://download.docker.com/linux/ubuntu jammy/stable amd64 Packages [37.8 kB]
+Get:18 http://packages.linuxmint.com vanessa/upstream amd64 Packages [44.3 kB]
+Get:19 http://packages.linuxmint.com vanessa/upstream i386 Packages [12.0 kB]
+Get:20 http://packages.linuxmint.com vanessa/import amd64 Packages [5879 B]
+Get:21 http://packages.linuxmint.com vanessa/import i386 Packages [2989 B]
+Get:22 http://packages.linuxmint.com vanessa/backport i386 Packages [5984 B]
+Get:23 http://packages.linuxmint.com vanessa/backport amd64 Packages [31.7 kB]
+Ign:24 https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/6.0 InRelease
+Get:25 https://repo.nordvpn.com/deb/nordvpn/debian stable/main i386 Packages [3535 B]
+Get:3 https://packages.microsoft.com/repos/code stable InRelease [3590 B]
+Get:26 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages [48.8 kB]
+Get:27 https://repo.nordvpn.com/deb/nordvpn/debian stable/main amd64 Packages [3542 B]
+Get:28 https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/6.0 Release [3094 B]
+Get:29 http://archive.ubuntu.com/ubuntu jammy-updates InRelease [128 kB]
+Get:30 http://security.ubuntu.com/ubuntu jammy-security/main amd64 Packages [1724 kB]
+Get:31 https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/6.0 Release.gpg [866 B]
+Get:32 http://archive.ubuntu.com/ubuntu jammy-backports InRelease [127 kB]
+Get:33 http://dell.archive.canonical.com jammy/somerville amd64 Packages [20.1 kB]
+Get:34 http://dell.archive.canonical.com jammy/somerville i386 Packages [4125 B]
+Get:35 http://archive.ubuntu.com/ubuntu jammy/main amd64 Packages [1395 kB]
+Get:36 https://packages.microsoft.com/repos/code stable/main amd64 Packages [17.4 kB]
+Get:37 https://packages.microsoft.com/repos/code stable/main arm64 Packages [17.5 kB]
+Get:38 https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/6.0/multiverse arm64 Packages [63.5 kB]
+Get:39 https://packages.microsoft.com/repos/code stable/main armhf Packages [17.6 kB]
+Get:40 https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/6.0/multiverse amd64 Packages [67.0 kB]
+Get:41 http://archive.ubuntu.com/ubuntu jammy/main i386 Packages [1040 kB]
+Get:42 http://archive.ubuntu.com/ubuntu jammy/main Translation-en [510 kB]
+Get:43 http://archive.ubuntu.com/ubuntu jammy/main amd64 DEP-11 Metadata [423 kB]
+Get:44 http://archive.ubuntu.com/ubuntu jammy/main amd64 c-n-f Metadata [30.3 kB]
+Get:45 http://archive.ubuntu.com/ubuntu jammy/restricted i386 Packages [30.4 kB]
+Get:46 http://archive.ubuntu.com/ubuntu jammy/restricted amd64 Packages [129 kB]
+Get:47 http://archive.ubuntu.com/ubuntu jammy/restricted Translation-en [18.6 kB]
+Get:48 http://archive.ubuntu.com/ubuntu jammy/restricted amd64 c-n-f Metadata [488 B]
+Get:49 http://archive.ubuntu.com/ubuntu jammy/universe i386 Packages [7474 kB]
+Get:50 http://security.ubuntu.com/ubuntu jammy-security/main i386 Packages [522 kB]
+Get:51 http://security.ubuntu.com/ubuntu jammy-security/main Translation-en [285 kB]
+Get:52 http://security.ubuntu.com/ubuntu jammy-security/main amd64 DEP-11 Metadata [43.2 kB]
+Get:53 http://security.ubuntu.com/ubuntu jammy-security/main amd64 c-n-f Metadata [13.1 kB]
+Get:54 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 Packages [2242 kB]
+Get:55 http://archive.ubuntu.com/ubuntu jammy/universe amd64 Packages [14.1 MB]
+Get:56 http://archive.ubuntu.com/ubuntu jammy/universe Translation-en [5652 kB]
+Get:57 http://security.ubuntu.com/ubuntu jammy-security/restricted i386 Packages [37.3 kB]
+Get:58 http://security.ubuntu.com/ubuntu jammy-security/restricted Translation-en [386 kB]
+Get:59 http://archive.ubuntu.com/ubuntu jammy/universe amd64 DEP-11 Metadata [3559 kB]
+Get:60 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 DEP-11 Metadata [208 B]
+Get:61 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 c-n-f Metadata [572 B]
+Get:62 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 Packages [888 kB]
+Get:63 http://archive.ubuntu.com/ubuntu jammy/universe amd64 c-n-f Metadata [286 kB]
+Get:64 http://archive.ubuntu.com/ubuntu jammy/multiverse amd64 Packages [217 kB]
+Get:65 http://archive.ubuntu.com/ubuntu jammy/multiverse i386 Packages [112 kB]
+Get:66 http://archive.ubuntu.com/ubuntu jammy/multiverse Translation-en [112 kB]
+Get:67 http://archive.ubuntu.com/ubuntu jammy/multiverse amd64 DEP-11 Metadata [42.1 kB]
+Get:68 http://archive.ubuntu.com/ubuntu jammy/multiverse amd64 c-n-f Metadata [8372 B]
+Get:69 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [1943 kB]
+Get:70 http://archive.ubuntu.com/ubuntu jammy-updates/main i386 Packages [681 kB]
+Get:71 http://archive.ubuntu.com/ubuntu jammy-updates/main Translation-en [343 kB]
+Get:72 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 DEP-11 Metadata [103 kB]
+Get:73 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 c-n-f Metadata [17.8 kB]
+Get:74 http://archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 Packages [2318 kB]
+Get:75 http://archive.ubuntu.com/ubuntu jammy-updates/restricted i386 Packages [38.9 kB]
+Get:76 http://archive.ubuntu.com/ubuntu jammy-updates/restricted Translation-en [399 kB]
+Get:77 http://security.ubuntu.com/ubuntu jammy-security/universe i386 Packages [620 kB]
+Get:78 http://archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 DEP-11 Metadata [212 B]
+Get:79 http://archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 c-n-f Metadata [604 B]
+Get:80 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [1110 kB]
+Get:81 http://archive.ubuntu.com/ubuntu jammy-updates/universe i386 Packages [724 kB]
+Get:82 http://archive.ubuntu.com/ubuntu jammy-updates/universe Translation-en [259 kB]
+Get:83 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 DEP-11 Metadata [341 kB]
+Get:84 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 c-n-f Metadata [25.9 kB]
+Get:85 http://archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 Packages [43.3 kB]
+Get:86 http://archive.ubuntu.com/ubuntu jammy-updates/multiverse i386 Packages [4752 B]
+Get:87 http://archive.ubuntu.com/ubuntu jammy-updates/multiverse Translation-en [10.8 kB]
+Get:88 http://archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 DEP-11 Metadata [940 B]
+Get:89 http://archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 c-n-f Metadata [444 B]
+Get:90 http://archive.ubuntu.com/ubuntu jammy-backports/main i386 Packages [59.3 kB]
+Get:91 http://security.ubuntu.com/ubuntu jammy-security/universe Translation-en [174 kB]
+Get:92 http://archive.ubuntu.com/ubuntu jammy-backports/main amd64 Packages [67.1 kB]
+Get:93 http://archive.ubuntu.com/ubuntu jammy-backports/main Translation-en [11.0 kB]
+Get:94 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 DEP-11 Metadata [89.2 kB]
+Get:95 http://archive.ubuntu.com/ubuntu jammy-backports/main amd64 DEP-11 Metadata [6772 B]
+Get:96 http://archive.ubuntu.com/ubuntu jammy-backports/main amd64 c-n-f Metadata [388 B]
+Get:97 http://archive.ubuntu.com/ubuntu jammy-backports/restricted amd64 DEP-11 Metadata [212 B]
+Get:98 http://archive.ubuntu.com/ubuntu jammy-backports/restricted amd64 c-n-f Metadata [116 B]
+Get:99 http://archive.ubuntu.com/ubuntu jammy-backports/universe i386 Packages [17.2 kB]
+Get:100 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 c-n-f Metadata [19.0 kB]
+Get:101 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 Packages [37.2 kB]
+Get:102 http://security.ubuntu.com/ubuntu jammy-security/multiverse i386 Packages [1356 B]
+Get:103 http://security.ubuntu.com/ubuntu jammy-security/multiverse Translation-en [7588 B]
+Get:104 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 DEP-11 Metadata [208 B]
+Get:105 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 c-n-f Metadata [228 B]
+Get:106 http://archive.ubuntu.com/ubuntu jammy-backports/universe amd64 Packages [28.8 kB]
+Get:107 http://archive.ubuntu.com/ubuntu jammy-backports/universe Translation-en [16.5 kB]
+Get:108 http://archive.ubuntu.com/ubuntu jammy-backports/universe amd64 DEP-11 Metadata [21.1 kB]
+Get:109 http://archive.ubuntu.com/ubuntu jammy-backports/universe amd64 c-n-f Metadata [672 B]
+Get:110 http://archive.ubuntu.com/ubuntu jammy-backports/multiverse amd64 DEP-11 Metadata [212 B]
+Get:111 http://archive.ubuntu.com/ubuntu jammy-backports/multiverse amd64 c-n-f Metadata [116 B]
+Fetched 52.4 MB in 14s (3641 kB/s)
+Reading package lists...
+W: Skipping acquire of configured file 'somerville-meera-tgl/binary-i386/Packages' as repository 'http://dell.archive.canonical.com jammy InRelease' doesn't have the component 'somerville-meera-tgl' (component misspelt in sources.list?)
+W: Skipping acquire of configured file 'somerville-meera-tgl/binary-amd64/Packages' as repository 'http://dell.archive.canonical.com jammy InRelease' doesn't have the component 'somerville-meera-tgl' (component misspelt in sources.list?)
+W: Skipping acquire of configured file 'somerville-meera-tgl/i18n/Translation-en' as repository 'http://dell.archive.canonical.com jammy InRelease' doesn't have the component 'somerville-meera-tgl' (component misspelt in sources.list?)
+W: Skipping acquire of configured file 'somerville-meera-tgl/dep11/Components-amd64.yml' as repository 'http://dell.archive.canonical.com jammy InRelease' doesn't have the component 'somerville-meera-tgl' (component misspelt in sources.list?)
+W: Skipping acquire of configured file 'somerville-meera-tgl/cnf/Commands-amd64' as repository 'http://dell.archive.canonical.com jammy InRelease' doesn't have the component 'somerville-meera-tgl' (component misspelt in sources.list?)
+Check succeeded:  APT cache
+
+Running check 'Upgrade simulation'
+mintupgrade-inhibit-power: no process found
