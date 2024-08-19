@@ -2,7 +2,7 @@
 
 Nowadays applications are very complex systems that integrate a number of services running on different machines and geographical locations. They act as distributed systems.
 
-Client-server: Simple distributed architecture of the eaarly world wide web. Tends to have a monolithic code base, difficult to scale and maintain on the long run.
+Client-server: Simple distributed architecture of the early world wide web. Tends to have a monolithic code base, difficult to scale and maintain on the long run.
 
 ### NGNIX
 
