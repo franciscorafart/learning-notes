@@ -1,19 +1,19 @@
 #!/bin/bash
 
 # Filecloud
-cd /home/frank/Desktop/filecloud
+# cd /home/frank/Desktop/filecloud
 
 # Take service down first
-docker-compose down
+# docker-compose down
 
 # Restart
-docker-compose up -d
+# docker-compose up -d
 
 # Plex media
 
 # Wait for Frank drive to mount
-frank_mount_point="/media/frank/Frank"
-frank_device="/dev/sdc1" # Toshiba drive
+frank_mount_point="/media/frank/Samsung"
+frank_device="/dev/sdd1" # Samsung drive
 
 # Function to check if Frank hard drive is mounted
 check_frank_mount() {
@@ -39,13 +39,19 @@ fi
 
 
 ## Grant Plex access to Frank hard drive and folders
-setfacl -R -m u:plex:rx /media/frank/
-setfacl -R -m u:plex:rx /media/frank/Frank/
-setfacl -R -m u:plex:rx /media/frank/Frank/Videos
-setfacl -R -m u:plex:rx /media/frank/Frank/Music
+# setfacl -R -m u:plex:rx /media/frank/
+# setfacl -R -m u:plex:rx /media/frank/Frank/
+# setfacl -R -m u:plex:rx /media/frank/Frank/Videos
+# setfacl -R -m u:plex:rx /media/frank/Frank/Music
 
 # Give access to Samsung drive
 setfacl -R -m u:plex:rx /media/frank/Samsung/
+setfacl -R -m u:plex:rx /media/frank/Samsung/Media/
+setfacl -R -m u:plex:rx /media/frank/Samsung/Media/Videos/
+setfacl -R -m u:plex:rx /media/frank/Samsung/Media/Music/
+setfacl -R -m u:plex:rx /media/frank/Samsung/Media/Vivi/
+setfacl -R -m u:plex:rx /media/frank/Samsung/Media/Vivi/Videos/
+setfacl -R -m u:plex:rx /media/frank/Samsung/Media/Vivi/Music/
 
 ## Restart service
 systemctl restart plexmediaserver
