@@ -4,7 +4,7 @@ Learn difference between different kinds of interfaces (M.2 NVM, mSata connector
 PCI based SSD
 SATA or mSATA based SSDs.
 
-2. Re-read LEsson 1 Install and Configure Motherboards. PCIe cards and their uses.
+2. Re-read Lesson 1 Install and Configure Motherboards. PCIe cards and their uses.
 
 3. Review Laser Printer section
 4. Review Antennas for transimission. Exam Objectives 2.3
