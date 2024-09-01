@@ -6,7 +6,7 @@ SATA or mSATA based SSDs.
 
 2. Re-read Lesson 1 Install and Configure Motherboards. PCIe cards and their uses.
 
-3. Review Laser Printer section
+3. Review Laser Printer section OK
 4. Review Antennas for transimission. Exam Objectives 2.3
 5. IEEE Ethernet Standards. Characteristincs of different standards (Power). Exam objectives 2.2
 6. Virtual Machine software names for different OSs
@@ -15,3 +15,8 @@ SATA or mSATA based SSDs.
 
 Core 2
 - Review all windows chapters with windows machine
+
+- Review WPE, WPA, WPA2, WPA3, TKRI
+    TKIP, CCMP, AES, SAE mechanism, 
+
+- Entreprise Authentication PRotocol => Extensible Authentication Protocol (EAP) / EAPoW
