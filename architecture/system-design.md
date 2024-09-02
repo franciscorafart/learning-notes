@@ -71,6 +71,12 @@ It's needed when one db is no longer enough to store all the data.
 - Celebrity problem: One shard might have data that is more sought after than others, exhausting one particular resource.
 - Joins and denormalizations: It's harder to make data joins when data is distributed in many shards. A common approach is to denormalize the db.
 
+#### Sharding in DBs
+Sharding is a form of partitioning, called horizontal partitionaing. For DBs the schemas are replicated and deviding the data by shard key.
+
+#### Partitioning DB
+When partitioning a DB it splits it into independent portions, so dividing the schema of th database.
+
 ### How to scale to millions of usrs
 - Stateless web servers
 - Redundancy on every tier
@@ -80,6 +86,24 @@ It's needed when one db is no longer enough to store all the data.
 - Scale data tier by sharding
 - Split tiers into individual services
 - Monitor and automate
+
+#### Scalability
+System is scalable if increased performance is proportional to resources added.
+
+### CAP Theorem
+Consistency - Availability - Partition Tolerance => Distributed systems can't guarantee the three simultaneously ie. 2 of 3
+
+- Consistency: State of data after DB update => For consistency, same queries should return the same result.
+- Availability: DBs can't have downtime, should always be available.
+- Partition Tolerance: DB should be functioning despite communication being unstable.
+
+
+### Storage
+- Blob / Object storage:
+Store data in similar sized modules or blocks that are unstructured. Great for media, logs, and backup storage. Harder to index, unlimited scalability, cloud native, cost-effective. Searched by key-value to find it.
+
+- File storage
+Storage in a herarchical file structure.
 
 # Chapter 2 Back-of-the-envelope estimations
 
