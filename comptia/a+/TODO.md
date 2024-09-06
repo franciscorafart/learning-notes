@@ -12,6 +12,7 @@ SATA or mSATA based SSDs.
 6. Virtual Machine software names for different OSs
 7. Single and Multi-Mode fiber. Exam Objective 3.1
 8. Dot-matrix printer
+9. Review IPv6
 
 Core 2
 - Review all windows chapters with windows machine
