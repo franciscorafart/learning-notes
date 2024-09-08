@@ -97,6 +97,7 @@ Consistency - Availability - Partition Tolerance => Distributed systems can't gu
 - Availability: DBs can't have downtime, should always be available.
 - Partition Tolerance: DB should be functioning despite communication being unstable.
 
+If partition exists and network communication breaks more consistency will imply less availability, as you must block functions to avoid inconsistencies.
 
 ### Storage
 - Blob / Object storage:
