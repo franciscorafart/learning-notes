@@ -9,9 +9,9 @@ A: Failing backlight
     Failing Inverter => Feeds the backlight
 
 - Q: If Webcam doesn't work on a video conferencing software, what is the first step?
-A: Close other video softwawre and retry (before plug-unplug camera and checking driver)
+A: Close other video softwawre and retry (before plug-unplug camera and checking driver). Only one software can use webcam at a time.
 
-- Q: Replace Motherboard of PC with Intel Core i7-11700K processor. Whcih CPU socket should the replacement motherboard have?
+- Q: Replace Motherboard of PC with Intel Core i7-11700K processor. Which CPU socket should the replacement motherboard have?
 A: LGA 1200. Used in 10 and 11th generation Intel Core processors.
 
 LGA 1150 => Used on 4th generation
@@ -60,7 +60,7 @@ Flickering image: Display's backlight ot circuitry startin to fail.
     - Bad cabling, faulty port on Switch or NIC, interferance (Fluorecent lights)
 
 - M.2 SSD -> PCI Express bus interface. Faster than SATA
-- Mini Sata, slower than M.2 (Up to  GBps)
+- Mini SATA (mSATA), slower than M.2 (Up to  6 GBps)
 
 - Battery:
     - Swellling battery is symptom of aging, defective, or overheating battery, not cause.
@@ -84,7 +84,7 @@ Adapter becomes loose from socket. Caused by:
 - PCIe Cards
 Learn the difference, how they look and what they're used for between PCIe x1, x4, x8, and x16
 - PCIe 16x => Smallest initial segment, break, and long portion of 16-lane configuration
-- PCIe x1 => Used for Wi-Fi adapters. Smalles segment of connector pins.
+- PCIe x1 => Used for Wi-Fi adapters. Smallest segment of connector pins.
 - PCI => Used for NIC cards (3 sections) ?
 - PCI => Used for Soundcards. Two segments ?
 
@@ -98,7 +98,7 @@ OSD - On-Screen Display
 Used by USB and Bluetooth for modern mobile device serial communication.
 
 - DVI
-DVI-I: Cpmect digital source to analog display or viceversa
+DVI-I: Connect digital source to analog display or viceversa
 DVI-D: Single and Dual link between two digital device
 DVI-A: Analog-to-analog
 
@@ -115,15 +115,64 @@ Access appliance like Switch, AP, Firewall or VPN gateway
 Small core (8-10 microns) that carries long wavelength over long distances
 
 - Multi-mode fiber
-No long distance and high signaling speeds as single-mode. Less coherent LEDSs. Larger core (625 or 50 microns)
+No long distance and high signaling speeds as single-mode (300m). Less coherent LEDSs. Larger core (625 or 50 microns)
 
-- Sdmudging print in laser printer
+- Smudging print in laser printer
 Becuase toner not fusing correctly.
 
 - CPM capabilities - Chip Level Multiprocessing
 Multiple processing cores combined in one. Multiple execution units and registers.
 Single-core CPU => single execution unit.
 
-Hyperthreading -> Simultaneous Multithreading (SMT). SMT allos threads to run through CPU at the same time.
+Hyperthreading -> Simultaneous Multithreading (SMT). SMT allows threads to run through CPU at the same time.
 
 - Address Space: Amount of memory locations CPU can keep track of. 32-bit CPU => 4GB, 64-bit CPU => 256TB
+
+# CompTIA test book
+
+Q: What three voltages does a laser printer power supply convert from AC?
+A: +5V, -5V for logical circuitry and +24V for paper transfer motors
+
+F: Hybrid drive is a combination of magnetic drive and SSD. Provides speed of SSD and high capacity of magnetic drive.
+
+F: TCP printing allows clients with different OSs to send jobs directly to printers without intra OS conflicts
+
+- Unplugin: Allows to put smaller PCIe cards into a larger slot. Ex. x8 card into x16 slot. x8 card will work at x8 speed. Motherboard needs to support it.
+
+- Dual-channel momory will work with only one memory card, but no in dual mode. To work in dual-channel mode memory modules in the channel have to be identical.
+
+- PCIe versions 1 to 5, each one dpubles the data transfer rate: 1-250MBps , 2.x => 500MBps, 3.0 => 1GBps, 4.0 => 2GBps, 5.0 => 4GBps
+
+- Resource pooling: When cloud provider deals with multiple tenants, it has additional capacity but saves money by sharing availability.
+
+- Metered utilization: Pay-as-you-use payment model for cloud services. Specially used in migration periods. Not the same as on-demand, that means resources can be added on the fly as needed.
+
+- Shared resources: Cloud infrastructure shared among cleints of a cloud provider.
+
+- Emulator requirements: When running a VM, emulator requirements should be minimized to run the VM effiiently
+
+- VDI (Virtual desktop Infrastructure) - 1) on premise or 2) on the cloud
+
+- Sandbox: On Windows 10/11 pro you can run Sandbox, a VM Windows you can use to open files or do tests without putting the host OS in danger.
+
+- HDCP protocol: Protocol to prevent unauthorized copying of digital video and audio. Ex. Used on DVDs to protect content
+
+- Network equipment designed for general use is generally set up to avoid licensed channels used by licensed entities and government.
+
+- Virtualization and TPM: Many virtual machine hosts require TPM to be enabled, for fucntinos like secure boot and hardware-based encryption.
+
+- Webcams can only be accessed by one application at a time. If it doesn't work, first step is closing other applications that might be using it.
+
+- MIMO technology: Multiple antennas for sending and receiving data, introduced with 802.11n - WiFi 4
+
+- EMI: Electromagnetic interference
+
+- AP overlap: When several access ponts are in close proximity, they can interfere with each other by overlapping channels => Slow and connection drop.
+
+- S.M.A.R.T failures are indicative of imminent hard drive failure, detecting issues beyond file system errors. => Physical wear or mechanical issues
+
+- VT-d: Intel virtualization technology. Needs to be enabled on BIOS for hypervisor to function correctly => Improves IO devices' performance in virtual env
+
+- Bit Locker to Go: Windows feature that encrypts portable drives.
+
+- VLAN Virtual LAN: technology that allows the creation of separate isolated virtual networks on a single Switch.
