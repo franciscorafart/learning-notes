@@ -143,7 +143,7 @@ F: TCP printing allows clients with different OSs to send jobs directly to print
 
 - PCIe versions 1 to 5, each one dpubles the data transfer rate: 1-250MBps , 2.x => 500MBps, 3.0 => 1GBps, 4.0 => 2GBps, 5.0 => 4GBps
 
-- Resource pooling: When cloud provider deals with multiple tenants, it has additional capacity but saves money by sharing availability.
+- Resource pooling: Permits all VMs within a virtualized environment to be assigned RAM for their operations. Allows dynamic allocation of RAM to different VMs according to demand without manual intervention or rigid contraints. When cloud provider deals with multiple tenants, it has additional capacity but saves money by sharing availability.
 
 - Metered utilization: Pay-as-you-use payment model for cloud services. Specially used in migration periods. Not the same as on-demand, that means resources can be added on the fly as needed.
 
@@ -176,3 +176,26 @@ F: TCP printing allows clients with different OSs to send jobs directly to print
 - Bit Locker to Go: Windows feature that encrypts portable drives.
 
 - VLAN Virtual LAN: technology that allows the creation of separate isolated virtual networks on a single Switch.
+
+- To reduce influx of similar spam emails from various domains => Update keyword filtering for the spam gateway
+
+- UPS - Uninterruptible Power Supply => Device that gives power to machines in power outages
+
+- SPF - Sender Policy Framework: Let's you specify the mail servers that are authorized to send emails for your domain. Helps receiving servers identify messages that appear to come from your ogranization.
+
+- DKIM : Same function as SPF, prevent spammers from impersonating you as email sender. Sender signs email so that receiver can verify both legitimate origin and that the message wasn't changed after being signed.
+
+- DMARC - Domain-based Message Authentication, Reporting and Conformance: 
+Protects users from forged emails that can slip by SPF and DKIM. Email authentication protocol. Verifies that sender identity the receiver sees matches the identity that is shown to the receiver sender using SPF andor DKIM.
+
+    Checks
+    - Checks FROM email address
+    - Checks return path (SPF record) is a valid place to return the email
+    - Checks DKIM record => Domain is valid and has a valid signature
+
+- Thermal printers for receipts will have dark streaks if temperature is set too high. Paper darkens when heated, so excessive heat can make it al darker.
+
+- Tablet cursor (?): Over time touch sensor alignment with the display can drift. => Recalibrate the touchscreen to avoid cursor drift.
+
+- Failing capacitors are a common issue in older desktop computers. Swollen capacitors can provide irregular power supply causing random BSOD or shutdowns.
+- HDMI-ARC port: Port designed to transfer audio directly to a soundbar.
