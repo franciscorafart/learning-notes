@@ -199,3 +199,17 @@ Protects users from forged emails that can slip by SPF and DKIM. Email authentic
 
 - Failing capacitors are a common issue in older desktop computers. Swollen capacitors can provide irregular power supply causing random BSOD or shutdowns.
 - HDMI-ARC port: Port designed to transfer audio directly to a soundbar.
+
+- 802.3af => Power over Ethernet protocol. af-at-bt / 13W-25W-50W
+- Generic Printer => When an OS uses a generic driver for a printer. You need a device-specific driver for the OS.
+- Burn-in test: When system's components are subject to intensive stress to test their reliability and performance. It produces a lot of heat.
+- Transfer roller Laser Printers => In charge of moving toner to the paper. If damaged it can lead to faint printed areas, as toner is not completely transfered to the page.
+- Monitor with pink, blue or red hue typically indicates issue with the cable connection.
+- Distinct channels access points:
+If different access points on a network have different assigned channels, it can reduce interference and by extension, better latency.
+
+- If upgrading motherboard with TPM device that encrypted data, you'll have to temprarily install the old motherboard to decrypt the data. It requires the original motherboard TPM.
+
+- Manual 'OK' for each print job => Mismatch between printer's default paper tray settings and the actual paper loaded in the printer.
+- When new RAM installed, BIOS might need to be updated to recognize the additional memory, specially if system doesn't automatically detect harware changes or memory modules disabled.
+- ECC is specifically designed for server stability and data integrity
