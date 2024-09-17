@@ -213,3 +213,17 @@ If different access points on a network have different assigned channels, it can
 - Manual 'OK' for each print job => Mismatch between printer's default paper tray settings and the actual paper loaded in the printer.
 - When new RAM installed, BIOS might need to be updated to recognize the additional memory, specially if system doesn't automatically detect harware changes or memory modules disabled.
 - ECC is specifically designed for server stability and data integrity
+- Stereolitophraphy printint: 3D prinitng that uses a tank of liquid resin as material.
+
+Color patterns T568 cable
+T568A: w/green - green - w/orange - blue - w/blue - orange - w/brown - brown
+T568B: w/orange - orange - w/green - blue - w/blue - green - w/brown - brown
+
+## Beep codes POST
+- 1 beep: POST Ok
+- 2 beeps: POST error
+- 3 beeps: Key being depressed: 
+- 1 long, 1 short: Motherboard
+- 1 long, 2 or 3 short: Video adapter
+- Continuous beep: Memory problem
+- Repeating short beeps: Power supply or motherboard
