@@ -227,3 +227,19 @@ T568B: w/orange - orange - w/green - blue - w/blue - green - w/brown - brown
 - 1 long, 2 or 3 short: Video adapter
 - Continuous beep: Memory problem
 - Repeating short beeps: Power supply or motherboard
+
+## Cables and volts
+- Molex: 5V, 12V
+- Molex KK: 5V, 12V
+- EBS 12V: 12V
+- SATA: 3.3V, 5V, 12V
+- P1: 3.3V, 5V, 12V
+
+Cable color code: Yellow 12V, Red 5V, black Ground, Orange 3.3V
+
+- To avoid interference 
+
+## Cable
+- Terminate IDC cable using punchdown tool
+- To avoid interference on TP cable untwisting should be less than 0.5 inches.
+- Add RJ45 connector with Crimper
