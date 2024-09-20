@@ -34,7 +34,7 @@ A: Jumper. Shorting the circuit with the jumper will reset the BIOS.
 - Troubleshooting:
 A problem has a Cause: Unerlying issue, Symptom: How th problem is experienced and Consequence: Business impact.
 
-- Memory Flex mode: ??
+- Memory Flex mode:
 Memory of equal value within each channel can work as dual-channel while remainder of memory will work in single-channel mode.
 
 - Printer Properties vs Printer preferences
@@ -68,8 +68,8 @@ Flickering image: Display's backlight ot circuitry startin to fail.
 - Unplugging: When card is plugged into port with greater number of lanes.
 
 Less to More volatile storage:
--mSata
--SSD
+-mSata => Because SSD is less volatile than HDD, as its less prone to failure.
+-HDD
 -USB
 -Ram
 -Cache
@@ -84,9 +84,10 @@ Adapter becomes loose from socket. Caused by:
 - PCIe Cards
 Learn the difference, how they look and what they're used for between PCIe x1, x4, x8, and x16
 - PCIe 16x => Smallest initial segment, break, and long portion of 16-lane configuration
-- PCIe x1 => Used for Wi-Fi adapters. Smallest segment of connector pins.
-- PCI => Used for NIC cards (3 sections) ?
-- PCI => Used for Soundcards. Two segments ?
+- PCIe x1 => Used for Wi-Fi adapters. Smallest segment of connector pins. Sometimes for sounds cards.
+- All PCIe connectors are 2 sections, the first one is adaptable for every verion, the following varies in size.
+
+- PCI => Used for NIC cards (3 sections or 2).
 
 NETBIOS
 - NetBIOS over TCP communications are used by modern networks supporting networking features of legacy Windows versions.
@@ -109,7 +110,7 @@ Constant LED activity that might indicate that drive is being used as RAM or cot
 Access appliance like Switch, AP, Firewall or VPN gateway
 
 - Post Failing
-- Remove appliacntes at a tme, remove all essentials and add them back one-by-one, check for faulty CPU.]
+- Remove appliacntes at a time, remove all essentials and add them back one-by-one, check for faulty CPU.
 
 - Single-Mode fiber.
 Small core (8-10 microns) that carries long wavelength over long distances
@@ -159,7 +160,7 @@ F: TCP printing allows clients with different OSs to send jobs directly to print
 
 - Network equipment designed for general use is generally set up to avoid licensed channels used by licensed entities and government.
 
-- Virtualization and TPM: Many virtual machine hosts require TPM to be enabled, for fucntinos like secure boot and hardware-based encryption.
+- Virtualization and TPM: Many virtual machine hosts require TPM to be enabled, for functions like secure boot and hardware-based encryption.
 
 - Webcams can only be accessed by one application at a time. If it doesn't work, first step is closing other applications that might be using it.
 
@@ -243,3 +244,31 @@ Cable color code: Yellow 12V, Red 5V, black Ground, Orange 3.3V
 - Terminate IDC cable using punchdown tool
 - To avoid interference on TP cable untwisting should be less than 0.5 inches.
 - Add RJ45 connector with Crimper
+
+- Port replicator: Allows users to connect several devices at once. Doesn't require laptop to be connected for devices to be connected to teach other.
+- KVM Switch: Use one keyobard, video device, mouse with more than one device
+
+- AC adapter for PC laptop => Check wattage and polarity.
+- GPS requires 4 satellites to triangulate the position of a GPS device.
+- When Video card integrated to motherboard, any RAM reserved for it can't be used by the rest of the system. They share RAM but it needs to be allocated on the BIOS/UEFI.
+- Tablet laptops usually are between 7" to 12"
+- CIFS legacy Windows protocol to share files. Relaced by SMB
+- TFTP: Trivial File Transfer Protocol=> Very simple connectionless protocol. Little overhead, perfect for booting thin client over a network. Transfer boot files to devices without hard drives. Not secure, don't use it to transfer files over the internet.
+0 IPv6 equivalent of `127.0.0.1` loopback address is `::1`
+
+- Parallel Workstations: Type2 Hypervisor that can be installed in Windows 10
+
+- DFS - Dynamic Frequency Selection is used to prevent signals from interfering with radar and satellites.
+- UPnP - Universal Plug and Play. Firewall setting that allows opening IP addresses and ports necessary for applications like VoIP or games.
+- Block: Groupng of sectors on a hard disk. HAving bad sector is sign of failing disk
+
+- Secure Boot: UEFI/BIOS feature where Cryptographic keys stored in firmware and bootloaders digitally signed by vendor. Can't be managed on OS. On the contrary, TPM can be managed on OS.
+
+- Pinter-Windows: Preferences and Properties. Preferences sets default print job settings like color, page orientation, finishing, etc. Properties sets congigurations such as Share, hardware, driver updates, change printing port.
+
+- Laptop default drive size: 2.5"
+
+## Wireless infrastructure
+- dBm => Transmit Power
+- dBi => Antenna gain. Decibels isotropic.
+- EIRP - Effective Isotropic Radiated Power => Sum of transmit power and gain, measured in dBm
