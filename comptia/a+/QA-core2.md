@@ -29,7 +29,8 @@ When configuring a new router 1. Change the default username and password and 2.
 - Windows creates a default Guest account when installed that is disabled by default. Ensure it’s disabled because, even though it can’t do much, it can allow a hacker to learn about other accounts. Also, change the name of the default Administrator account.
 
 - Best password practice is to have a minimum 8-10 character long password with different character types. Password ideal rotation is every 45 days,
-
+    - Sometime not recommended because long passwords and different characters incentivice writing them down
+    - MEmoral phrases are better
 - NFTS tracks security for each resource with an ACL (Access Control List). It contains user and group names with their corresponding access levels to that resource.
 
 - A Contractor should be given a guest account. Guest accounts have the same rights as users but can’t access log files. => Access to the system for a limited time.
@@ -43,9 +44,23 @@ When configuring a new router 1. Change the default username and password and 2.
 WPA-2
 - CCMP Block cipher mode: Takes block of data, encrypts it, and sends it over as a package
 - CCMP: DAta confidentiality with AES encryption and Message integrity check with CBC-MAC
-- WPA-2 has a brute-force problem: 4-ways hand shake shares a hash (or pre-shared key - PSK)
+- WPA-2 (used at home) has a brute-force problem: 4-ways hand shake when connecting to a WPA2 network with pre-shared key (PSK). Someone could capture the hash and brute force to find the associated PSK (or pre-sharerd key) => These days a couple of days is enough to brute force a PSK
+- Encryption key 128-bit
 
 WPA-3
 - GCMP Block Cipher Mode (Galois Counter Mode Protocol): Stronger encryption than WPA2
 - AES encryption still, and GMAC for message integrity
+- SAE (Simultaneous Authentication of Equals) instead of PSK
+    - Mutual authentication method mofidies WPA2 PSK authentication process.
+    - Devices (host and AP) can create session keys without sending them across the network: No 4-way handshake, no shared PSK, no brute force
+    - Diffie-HEllman derived key exchange without authentication component.
+- Individualized data encryption
+- Longer encryption keys (128/192/256 bit keys) -> More difficult to decrypt
+
+-  Wireless security modes
+    - Open system => No auth required
+    - WPA2/3 or WPA3 Personal / WPA2/3-PSK with a pre-shared key
+    - WPA2/3 Enterprise or WPA2/3-802.1X => Uses Authentication server.
+
+
 
