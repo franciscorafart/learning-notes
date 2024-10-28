@@ -63,4 +63,25 @@ WPA-3
     - WPA2/3 Enterprise or WPA2/3-802.1X => Uses Authentication server.
 
 
+## Comptia PBQs and Questions
 
+- Windows 10 Edition features
+Volume licensing and BranchCache available for Windows Pro, Pro for workstations, and Enterprise.
+6TB max RAM for Enterprise and Pro for Workstations.
+
+- BranchCache is feature in Windows 10 and Server that optimizes WAN bandwidth by caching content from remote servers at branch office locations.
+
+Open Task Manager:
+1. ctrl+alt+Delete
+2. ctrl+Shift+Esc
+
+- `start ctrl shift b` -> Command to restart graphic driver in Windows
+
+- `df` : Disk free command in linux. `df --human-readable`
+- `du` : Disk usage of files in Linux
+- `rsync`: Utility to transfer and synchronize files between a computer and storage.
+
+- When opening a support ticket, a) acknowedge request, b) establish a timeline, c) Explain time constraints
+
+- Anti-static bag: shinny gray metallic bag.
+- Connecting devices to UPS (Uninterrupted power supply) is an effective way of preventing short circuit and power surges.
