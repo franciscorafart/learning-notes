@@ -109,3 +109,12 @@ Open Task Manager:
 - 1GHZ required to run Windows 10 Pro, 20GB, 2GB RAM for 64 bit system.
 - To connect to a machine via RDP all you need is the name under "How to connect to this PC", as long as a few previous steps have been taken: RDP enabled on mobile or client PC, 
 - `nbtstat` command used to troubleshoot NetBIOS over TCP
+- `netstat` Essential insights into network connections like active connections, routing tables.
+- USB selective suspend: Power Options utility in Windows allows a user to configure power for device or USB peripherals.
+- `ifconfig` : Interface config command in linux/mac. It allows to view and set network interface configurations. Ip addresses, netmask, etc.
+- To enable a lock screen in Windows go to Settings -> Personalizations
+- `robocopy` File and dir copy command with advanced features like mirroring capabilities (for backups) and automatically adding or deleting files.
+- VNC (Virtual Network Computing) links to computers via network. Allows for remote view of Desktop. They support multiple platforms. Connects to the computer by sharing its screen, while RDP connects to the computer and creates a virtual desktop session. VNC uses cloud connection while RDP uses port forwarding.
+- Programs & Features => Simple Windows utility to repair programs (Fix corrupted and missing files)
+- AUP -> Acceptable Use Policy. An agreement that must be signed when accessing resources of a institution, for example a University. Shows the acceptable practices and consequences for violations.
+
