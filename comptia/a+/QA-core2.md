@@ -85,3 +85,27 @@ Open Task Manager:
 
 - Anti-static bag: shinny gray metallic bag.
 - Connecting devices to UPS (Uninterrupted power supply) is an effective way of preventing short circuit and power surges.
+
+- When 
+    - Verify Malware symptoms
+    - Quarantine system
+    - Disable System restore
+    - Remidiate infected systems
+- After removing a virus from a system, first:
+    - schedule tasks and Updates
+    - Make restore point
+    - Educate user
+
+- `sfc /scannow` a command to scan and repair file system in Windows.
+- To fix roaming profile problems, rebuild Windows profiles.
+- Restore Points in Windows back up system configurations, not user files.
+- hen repairing a computer and following safety procedure one commonly overlooked danger is cuts from the metal chasis.
+
+- To add language in Windows go to Windows Setting ->Time & Language -> Languages
+- To congigure Proxy Server => Control Panel -> Internet options
+- If an IP address has a `/48` after it it means: IPV6 and that the prefix is 48 bits long (Different meaning that in ipv4, where `/xx` means the subnet mask)
+- Task Manager will have information about users connected to the local machine. In the Users tab.  
+- On a 64 bit machine you can install 32bit and 64bit operating systems. Compatibility mode is not related, as it is a Windows feature to run 32Bit applications on a 64 bit OS.
+- 1GHZ required to run Windows 10 Pro, 20GB, 2GB RAM for 64 bit system.
+- To connect to a machine via RDP all you need is the name under "How to connect to this PC", as long as a few previous steps have been taken: RDP enabled on mobile or client PC, 
+- `nbtstat` command used to troubleshoot NetBIOS over TCP
