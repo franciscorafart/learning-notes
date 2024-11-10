@@ -62,6 +62,37 @@ WPA-3
     - WPA2/3 or WPA3 Personal / WPA2/3-PSK with a pre-shared key
     - WPA2/3 Enterprise or WPA2/3-802.1X => Uses Authentication server.
 
+- To remove Malware from Windows machine:
+    - WinRe
+        - Windows Recovery Environment. Very powerful command line you can run without starting the whole OS. Access to all files in OS, dangerous way to remove malware. Complete control.
+        - Copy, rename or replace files from OS
+        - Enable or Disable services
+        - You can start WinRE 
+            1. From Windows itself. Shift + Restart button on Start menu. => Find installation media for version of Windows and boot from there.
+            2. Restart in Advanced Startup
+            Window 10: Startup mode Settings -> Update & Security -> Recovery -> Advanced Startup
+            After reboot, in blue screen options:  Trobuleshoot -> Advanced -> Command Prompt
+
+- Only warantee of removing Malware -> Fresh install of the OS or restore from the known-good backup
+- To prevent Shoulder Surfing => Privacy filter on screen (only allows to see it from the front)
+- On-path attack (Man-in-the-middle). Redirects traffic.
+    - ARP poisoning: On-path attack on a local subnet.
+        Each device has an ARP cache with list of IP addresses and MAC addresses associated to those devices
+        - Device broadcasts "Who is 192.168.1.1" for example, when communicating with a device and the device with that IP address responds with its MAC address, which is cached by the requestin device.
+        - No security associated to the ARP broadcast and its response => This alows for an attacker's device to sit in the middle of communication between host and router.
+        - Requires attacker to be in the local network and on the same IP subnet
+    - On path browser attack: Malware installed in the browser.
+- Password attacks
+    - Some apps store passords in plain text => Never store passwords as plain text.
+    - How to store password?
+        - Hash: Fixed length string - message digest or fingerprint. Hasing function with no collision ideal.
+            - Original password can't be recovered from the hash => Perfect for passwords to avoid deriving the password.
+            - Sha-256 hashing function used in many applications
+            - Brute force can be done to try figuring out hash stored
+        - Dictionary attack: Hash of real words
+- XSS 
+    - Keep browser up to date
+    - As a developer => Validate all inputs to the application
 
 ## Comptia PBQs and Questions
 
@@ -117,4 +148,42 @@ Open Task Manager:
 - VNC (Virtual Network Computing) links to computers via network. Allows for remote view of Desktop. They support multiple platforms. Connects to the computer by sharing its screen, while RDP connects to the computer and creates a virtual desktop session. VNC uses cloud connection while RDP uses port forwarding.
 - Programs & Features => Simple Windows utility to repair programs (Fix corrupted and missing files)
 - AUP -> Acceptable Use Policy. An agreement that must be signed when accessing resources of a institution, for example a University. Shows the acceptable practices and consequences for violations.
+- When web pages load inconsistently it could be an indicator of a redirection to a malicious website => Check the URL.
+- `net use` => Windows command used to map network drives to shared folders.
+- EULA - Legal contract between end user and vendor regarding appropiate uses of a software.
+- AES in WPA2 replaced TKIP for WPA
+- Folder redirection -> Allows for users profiles to be stored ina a centralized location on a network in a Romaing Profile.
+- Windows restores are created automatically by default, can be created manually, and some installation utilities will create them before installing new programs.
+- Reputable source for information about latest security threats: `www.us-cert.gov`
+- Google Sync: Service for syncronizing android phone
+- If hard drive gets free space under 10%, its performance can decrease dramatically. => Disk Cleanup utility
+- Safe Mode and WinRE are places to refresh a Windows installations while keeping personal files.
+- To remove malware from an infected system is a general good practice to boot into Safe Mode or into an installation media, and run the anti-virus on the hard drive from there. Avoid running it from the infected drive.
+- If you get a duplicated IP address error, it means one machine has a manual IP configuration => The fastest solution is to set that machine to use DHCP.
+- Start+Ctrl+Shift+B => Test responsiveness of machine. Beep and display should reinitialize.
+- Backup types:
+    - Full
+    - Differential: All data since last full backup
+    - Incremental: All data and files changed since last backup
+- Services Console (services.msc) => Starts, stops, pauses processes running on the background
+- `robocopy` works better than `xcopy` to long file names and NFTS attributes.
+- Local Users and Groups console (lusrmgr.msc) manages ocal users and groups
+- System Congiguration utility (msconfig.exe) modifies settings and files that control how computer loads and boots Windows: Default OS, boot options.
+- Local Security Policy (secpol.msc) views and edits local security settings.
+- `sfc` System File Checker scans and repairs system files if corrupt (malware) or damaged. Doing this doesn't affect performance.
+- System Information (msinfo.exe): Comprehensive report of system's hardware and software components.
+- Fedora is an open-source linux distro. Red Hat is a subscription-based distibution derived from Fedora. SUSE Linux is also subscription.
+- Quality Updates don't make radical changes to Windows. Feature Updated do.
+- NFTS supports case-sensitive naming to support Unix/Linux compatibility.
+- When data is written to NFTS, it is re-read, verified, and logged via journaling.
+- Snapshot => Allows Volume Shadow Service to make read-only copies of files.
+- Refresh => To attempt to recover OS with corrupt files without loosing personal data
+- HCL (Hardware Compatibility List) => List of tested devices that work with Windows OS. Previously called LPL - Windows Logo'd Product List
+- SED: Self Encryption Devices
 
+Application files for 64 bit applications: %SystemRoot%\system32
+Application files for 32 bit applications: %SystemRoot%\syswow64
+
+- POSIX compliance supports UNIX/Linux compatibility
+- WinRE => Windows Recovery command prompt for running: `diskpart`, `sfc`, `chkdsk`, `bootrec`, `bcdedit`
+- BOOTMGR and Boot Configuration Data `BCD` files normally installed in hidden System Reserved partition.
