@@ -179,11 +179,27 @@ Open Task Manager:
 - Snapshot => Allows Volume Shadow Service to make read-only copies of files.
 - Refresh => To attempt to recover OS with corrupt files without loosing personal data
 - HCL (Hardware Compatibility List) => List of tested devices that work with Windows OS. Previously called LPL - Windows Logo'd Product List
-- SED: Self Encryption Devices
+- SED: Self Encrypting Devices
+- NIST: National Institute of Standards and Technologu
 
-Application files for 64 bit applications: %SystemRoot%\system32
-Application files for 32 bit applications: %SystemRoot%\syswow64
+Shared system files for 64 bit Windows: %SystemRoot%\system32
+Shared system files for 32 bit Windows: %SystemRoot%\syswow64
+Application files for 64 bit: Program Files
+Application files for 32-bit applications (on 64 bit platform): Program Files (x86)
 
+- WOW64 Environemt where 32-bit application can run in a 64-bit Windows environment
 - POSIX compliance supports UNIX/Linux compatibility
 - WinRE => Windows Recovery command prompt for running: `diskpart`, `sfc`, `chkdsk`, `bootrec`, `bcdedit`
 - BOOTMGR and Boot Configuration Data `BCD` files normally installed in hidden System Reserved partition.
+- RMM Remote Monitoring and Management => Tools used by Managed Service Providers (MSP), outsourced company that deals with IT
+- MSD - Material safery Data Sheet
+- NLA - Network Level Authentication -> Protects RDP server against denial of service attacks.
+- Firefox configurations: `about:preferences`. Chrome: `chrome://settings`, `edge://settings`
+- behavioral-based security monitoring: Failed attempts, login times, concurrent logins.
+- Fileless malware => Malware that uses scripting environment to create new malicious processes in memory.
+- C2 or C&C => Command and Control host or network
+- No-root Firewalls: They create a VPN and then control app access in the VPN.
+- To rebuild a local user profile in Windows you create a new account and copy the files from the old profile excluding three: NTUSER.DAT , NTUSER.DAT.LOG and NTUSER.INI.
+- To detect whether a mobile device is rooted or jail broken => MDMs have routines to check if devices are jailbroken.
+- Most exploits to iOS devices are when the device is tethered (connected)
+- Data Protection -> Second round if encryption that protects Email
