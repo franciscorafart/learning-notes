@@ -192,7 +192,7 @@ Application files for 32-bit applications (on 64 bit platform): Program Files (x
 - WinRE => Windows Recovery command prompt for running: `diskpart`, `sfc`, `chkdsk`, `bootrec`, `bcdedit`
 - BOOTMGR and Boot Configuration Data `BCD` files normally installed in hidden System Reserved partition.
 - RMM Remote Monitoring and Management => Tools used by Managed Service Providers (MSP), outsourced company that deals with IT
-- MSD - Material safery Data Sheet
+- MSD / MSDS - Material safety Data Sheet
 - NLA - Network Level Authentication -> Protects RDP server against denial of service attacks.
 - Firefox configurations: `about:preferences`. Chrome: `chrome://settings`, `edge://settings`
 - behavioral-based security monitoring: Failed attempts, login times, concurrent logins.
@@ -202,4 +202,32 @@ Application files for 32-bit applications (on 64 bit platform): Program Files (x
 - To rebuild a local user profile in Windows you create a new account and copy the files from the old profile excluding three: NTUSER.DAT , NTUSER.DAT.LOG and NTUSER.INI.
 - To detect whether a mobile device is rooted or jail broken => MDMs have routines to check if devices are jailbroken.
 - Most exploits to iOS devices are when the device is tethered (connected)
-- Data Protection -> Second round if encryption that protects Email
+- Data Protection -> Second round if encryption using a key derived from user's credentials that protects Email and apps
+- PCI DSS (Payment card Industry Data Security Standard) ->  Governs credit card transactions
+- Monitor SSH => Monitor for compromised public keys
+- Quick Assist -> Works over port 443
+- MSRA -> Microsoft Remote Assistance -> Assign port dynamically in range 49152-65535
+- DRM -> Digital Rights Management. Mostly for digital music and video rights.
+- CPython -> Quickest Python interpreter for Windows
+- WOL -> Wake on LAN. For remote booting of device.
+- EDR (Endpoint Detection and Response) -> ?
+- CSIRT => Computer Security Incident Response Team. Single point of contact for security incidentes, HElpdesk escales here.
+- File History -> User data backup. `Settings -> Update & Security -> Backup`
+- Synthetic data backuo ->
+- VBScript -> Executed by wscript.exe interpreter by default (?? Look into this)
+- Spine and Leaf toplogy -> Better support for east-west traffic and software-defined networking (SDN) ??
+- HBA (Host Bus Adapter) for a fiber cable enables data connectivity between devices
+- VFN (Virtual Network Function) -> Specifies and deploys instances of each network appliance. Designed to run as virtual machines on standard CPUs
+- MANO (Manufacturing and Orchestration) positions VFNs withing workflows to perform forwarding and filtering they are designed for.
+- DaaS (Deskto as a Service) - Virtual desktop infrastructure (VDI) as a cloud service
+- Network Topology Diagram -> Shows ho assets are linked as nodes.
+- SDN (Software Defined Networking) inserts control layer between application and infrastructure layer.
+- Initiator -> Client device of a Storage Area Network
+- SOP (Standard Operation Procedure) -> step-by-step list of actions that must be completed to comply with policy.
+- RMA (Return Merchandise Authorization) => Document constumer has to attach for a repair.
+- Change Request -> Generated when a fault needs to be fixed.
+- Orquestration => Sequence of automated tasks
+- mGRE (Multipoint GRE) is version of the protocol that supports point-to-multipoint links.
+- MPLS (Multi Protocol Label Switching) -> Service offered by WAN providers as means of establishing private links with guaranteed service levels.
+- Categories and Subcategories group related tickets together.
+- Policy -> Overall statement of intent
