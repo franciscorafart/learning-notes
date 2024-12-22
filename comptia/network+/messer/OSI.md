@@ -1,6 +1,8 @@
 # OSI Model
 
 Mnemotecnia: `All People Seem To Need Data Processing` => 
+Or
+Mnemotecnica: `Please do not Throw Sausage Pizza Away`
 
 ### Application - Layer 7
 - Layer we get to see
@@ -16,6 +18,8 @@ Layer before we get to see data
 ### Session - Layer 5
 - Start and Stop communication between one endpoint (device) and another
 - Tunneling protocols
+- ASP, ADSP, NetBIOS, PAP
+- Connectinos between applications
 
 ### Transport layer - Layer 4
 - How and Where data is being delivered
@@ -36,3 +40,11 @@ Layer before we get to see data
 
 ### Wireshark
 On the middle window of wireshark you can see the different layers. Layers 5, 6, 7 are grouped together.
+
+# Topologies
+
+## Point-to-point
+Direct connection between two points. Ex. Phone call.
+
+## Start Topology
+Type of LAN connection where all devices are connected to a central Hub

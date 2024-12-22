@@ -231,3 +231,30 @@ Application files for 32-bit applications (on 64 bit platform): Program Files (x
 - MPLS (Multi Protocol Label Switching) -> Service offered by WAN providers as means of establishing private links with guaranteed service levels.
 - Categories and Subcategories group related tickets together.
 - Policy -> Overall statement of intent
+
+# Practice exam review
+- Items that require special care when disposing a computer/equipment due to chemicals, toxins, hazardous materials: Batteries, Toner, Motherboard.
+- Simultaneous Authentication of equals in WPA3 replaces 4-way handshake of WPA2
+- AES replaces RC4 and CCPM replaces  TKIP in WPA2
+- Active Directory
+    - Domain Controlles us an Organizational Unit (OU)
+    - Member Of: View and Modify gtoup membership
+    - Home Foler: Connect -> Configures mapping of private drive to network share.
+    - Password settings no in general tab
+    - User: Organizational Unit that contains user objects and security groups
+- PHI: Protected Health Information - Industry Standard. Health info, related payments
+- PII Personally identifiable information
+- Rooted device: Android. Jailbreaked: Apple. =>They will have custom firmware with no valid developer code signature.
+- UEFI =? GUID Partition table identifies System Partition. System partition contains boot manager and boot configuration data (BCD) => BOOTMGFW.EFI
+- MBR (Master boot record) => Identifies boot sector => Windows Boot Manager BOOTMGR.EXE
+- Browsing with no cache stored => Incognito mode.
+- Sideloading: Installing untrusted apps with .APK format file.
+- Bootleg app: Pirate app that mimcs legitimate app.
+- Windows: Best counter in performace monitor to evaluate  how busy the disk is => % Disk Time
+- Microsoft Quick Assist: Port 443
+- SOP: Set of instructions (Software installation instructions, new user setup checklist, server decomissioning). Not policies/.
+- Restore Windows to factory state: Recovery partition
+- Defragmentation tool on SSD:  1) Identify blocks that are deletable and 2) Tagging blocks as writable.
+
+Q:40
+
