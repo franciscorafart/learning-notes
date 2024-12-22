@@ -248,13 +248,46 @@ Application files for 32-bit applications (on 64 bit platform): Program Files (x
 - UEFI =? GUID Partition table identifies System Partition. System partition contains boot manager and boot configuration data (BCD) => BOOTMGFW.EFI
 - MBR (Master boot record) => Identifies boot sector => Windows Boot Manager BOOTMGR.EXE
 - Browsing with no cache stored => Incognito mode.
-- Sideloading: Installing untrusted apps with .APK format file.
+- Sideloading: Installing untrusted apps with .APK format file. Does not require root access.
 - Bootleg app: Pirate app that mimcs legitimate app.
 - Windows: Best counter in performace monitor to evaluate  how busy the disk is => % Disk Time
 - Microsoft Quick Assist: Port 443
 - SOP: Set of instructions (Software installation instructions, new user setup checklist, server decomissioning). Not policies/.
 - Restore Windows to factory state: Recovery partition
 - Defragmentation tool on SSD:  1) Identify blocks that are deletable and 2) Tagging blocks as writable.
+- To access recovery image on a Wndows PC: 1) WinRE environment or 2)Repair Disk 
+- Latent evidende: Evidence that can't be seen with the naked eye, it needs to be interpreted using a machine or process.
+- Digital Forensics: Science of collecting evidence from a computer system that will be accepted in a court of law.
+- Windows logs:
+    - Application: Logs of non-core processes, including third-party applications and installers
+    - System: Logs with info about the core operating system.
+    - Security: Audit data of the system.
+    - Setup: Log of events generated during installation of OS.
+- VNC => Runs on port 5900. Free product with capabilities similar to Remote Desktop Protocol
+- RDP => Runs on port 3389
+- Quick assist => Port 443
 
-Q:40
+- ipcongig
+    - /flushdns => Cleans DNS cache
+    - /renew => Renews DHCP leases
+    - /release => release currently configured dynamic addresses.
+    - /all => Show IP releated configurations
 
+Windows INternet configurations
+ - Network and Internet => Modern settings app to view and configure network
+ - Internet Options => Options associated to Internet Explorer
+ - Network and Sharing Center => Status information for current network connections
+ - Advanced Sharing Settings => Configures network discoveries, enables/disables printer sharing.
+
+- Testing backup: 1)Verify all files are there  and 2) Verify after Software finished (comparing hash)
+- Windows CMD interpreter => Batch script (.BAT)
+- std
+    - std in => Handles keyboard input
+    - stdout => Sends text output to a teletye device (tty). stdout stream reads data from the shell to the tty device  and displays it through a terminal.
+- Microsoft Direct Access virtual Private Networking technology => Requires Windows Enterprise.
+- Powershell => Scriptng language with hudreds of prebuilt modules calles cmdlets, built on .NET framework
+- Proximity sensors => They use Radio frequency ID tags (RFID) and can be used to track movement in an area.
+- Virus: Malware concealed in the code on an executable stored on disk.
+-`autorun.inf` => File in legacy Windows systems that would run commands in it as soon as an optical or USB device is plugged in.
+- Execution control => Logical security technology designed to prevent malicious software from running on a host regardless of what user account privileges allow.
+- Policies (Such as automatic screensaver) can prevent lunchtime attack.
