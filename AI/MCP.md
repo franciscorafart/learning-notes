@@ -131,3 +131,6 @@ MCP servers offer three main types of primitives:
 - Use connection pooling
 - Monitor response times
 - Optimize resource usage
+
+## Tutorial for creating MCP servers
+https://modelcontextprotocol.io/quickstart/server
