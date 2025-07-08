@@ -120,3 +120,92 @@ Keep PHP, MariaDB, and Apache updated via sudo apt upgrade.
 Apache runs as www-data; give this user access to any data folders used by Nextcloud.
 Avoid placing your data directory inside /home/USERNAME unless permissions are handled carefully.
 
+## Setup access via VPN - Meshnet
+
+✅ Short Answer
+To make your Nextcloud site accessible through both:
+
+Your local IP (e.g. 192.168.68.62), and
+
+Your NordVPN Meshnet URL (e.g. linux-server.nord),
+
+You should either:
+
+Use ServerName for the primary domain/IP
+
+Add other domains using ServerAlias
+
+🛠️ How to Modify nextcloud.conf
+Open the Apache config:
+
+```
+sudo nano /etc/apache2/sites-available/nextcloud.conf
+```
+
+And modify like this:
+
+apache
+```
+<VirtualHost *:80>
+    ServerAdmin francisco@rafart.tech
+    DocumentRoot /var/www/nextcloud
+    ServerName 192.168.68.62
+    ServerAlias linux-server.nord
+
+    <Directory /var/www/nextcloud/>
+        Require all granted
+        AllowOverride All
+        Options FollowSymLinks MultiViews
+    </Directory>
+
+    ErrorLog ${APACHE_LOG_DIR}/nextcloud_error.log
+    CustomLog ${APACHE_LOG_DIR}/nextcloud_access.log combined
+</VirtualHost>
+```
+You can even add more aliases if needed:
+
+apache
+```
+    ServerAlias linux-server.nord another.name.local
+```
+
+Then reload Apache:
+
+```
+sudo systemctl reload apache2
+```
+
+✅ Also: Update Nextcloud’s Trusted Domains
+Apache will serve the request, but Nextcloud itself will reject requests from unknown domains/IPs unless you explicitly trust them.
+
+Edit the config file:
+
+```
+
+sudo nano /var/www/nextcloud/config/config.php
+```
+Find the 'trusted_domains' array and add your new hostname or IP:
+
+php ```
+'trusted_domains' =>
+  array (
+    0 => '192.168.68.62',
+    1 => 'linux-server.nord',
+  ),
+```
+
+Save and restart Apache:
+
+bash
+```
+sudo systemctl restart apache2
+```
+
+✅ Done!
+You can now access your Nextcloud via both:
+
+http://192.168.68.62
+
+http://linux-server.nord (as long as Meshnet is connected and routing properly)
+
+
